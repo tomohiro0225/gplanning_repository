@@ -1,0 +1,65 @@
+/* ヘッダー ------------------------------*/
+.cp-header01 {
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+    
+    /* ロゴ */
+    &__logo {
+        line-height: 60px;
+    }
+    &__logo img {
+        height: 32px;
+        vertical-align: middle;
+    }
+    &__logo img:hover {
+        opacity: 0.7;
+        transition: .2s ease-in-out;
+    }
+    
+    /* ナビゲーション */
+    &__navi {
+        line-height: 80px;
+    }
+    
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+    &__item:not(:last-child) {
+        margin-right: 32px;
+    }
+    &__item:last-child{
+        background: #074466;
+        a{
+            padding: 0 60px;
+            color: #fff; 
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__item a {
+        display: inline-block;
+        transition: .2s ease-in-out;
+        color: #074466;
+        text-decoration: none;
+    }
+    &__item a:hover {
+        opacity: .7;
+    }
+    
+    /* ハンバーガーメニュー */
+    &__hamburger__button,
+    &__hamburger__content {
+        display: none;
+    }
+    &__hamburger__item a {
+        text-decoration: none;
+    }
+}

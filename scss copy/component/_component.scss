@@ -1,5 +1,31 @@
-// conponent
-
+// conponent/* 見出し ------------------------------*/
+.c-secTitle {
+    position: relative;
+    color: #074466;
+    text-align: center;
+    font-weight: bold;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 50px;
+        margin: 0 auto;
+        background: #074466;
+    }
+    & span:first-child {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-size: 32px;
+    }
+    & span {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
 
 
 @media screen and (max-width:768px) {
