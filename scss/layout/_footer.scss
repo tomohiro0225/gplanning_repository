@@ -1,0 +1,68 @@
+/* フッター ------------------------------*/
+.cp-footer02 {
+    background: #074466;
+    
+    /* ナビゲーション */
+    &__navi {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 45px 0px 100px;
+        height: 290px;
+    }
+    &__navi__group{
+        margin-left: 25px;
+        width: calc(100% / 4);
+    }
+    &__navi__group:not(:first-child) {
+        padding-left: 20px;
+        border-left: 1px solid rgba(255, 255, 255, 0.4);
+    }
+    &__navi__title {
+        margin-bottom: 16px;
+        font-size: 14px;
+        color: #fff;
+        font-weight: bold;
+        a{
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    &__navi__item {
+        font-size: 12px;
+        padding: 0 0 12px 0;
+        color: #fff;
+        a {
+        font-size: 12px;
+        color: #fff;
+        }
+    }
+    &__navi__item a:hover {
+        opacity: 0.7;
+    }
+    
+    /* ロゴ */
+    &__logo:first-child {
+        img {
+            height: min-content;
+            width: 125px;
+        }
+    }
+    &__logo:last-child {
+        img {
+            height: 38px;
+            width: 38px;
+        }
+    }
+    
+    &__copywriter {
+        height: 60px;
+        font-size: 12px;
+        line-height: 60px;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+

@@ -66,10 +66,12 @@ table {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 1366px;
   margin: auto;
 }
 .cp-header01__logo {
   line-height: 60px;
+  margin-left: 45px;
 }
 .cp-header01__logo img {
   height: 32px;
@@ -103,6 +105,8 @@ table {
   transition: 0.2s ease-in-out;
   color: #074466;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
 }
 .cp-header01__item a:hover {
   opacity: 0.7;
@@ -119,67 +123,59 @@ table {
   background: #074466;
   /* ナビゲーション */
   /* ロゴ */
-  /* SNSアイコン */
-}
-.cp-footer02__container {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1065px;
-  margin: auto;
-  padding: 40px 0px;
 }
 .cp-footer02__navi {
   display: flex;
-  flex-wrap: wrap;
-  margin-right: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 0px 100px;
+  height: 290px;
+}
+.cp-footer02__navi__group {
+  margin-left: 25px;
+  width: 25%;
 }
 .cp-footer02__navi__group:not(:first-child) {
-  margin-left: 40px;
-  padding-left: 16px;
+  padding-left: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
 .cp-footer02__navi__title {
   margin-bottom: 16px;
-  font-size: 20px;
-  opacity: 0.8;
+  font-size: 14px;
   color: #fff;
   font-weight: bold;
 }
-.cp-footer02__navi__item a {
-  display: inline-block;
-  padding: 12px 0;
-  transition: 0.2s ease-in-out;
+.cp-footer02__navi__title a {
+  font-size: 14px;
   color: #fff;
-  text-decoration: none;
+}
+.cp-footer02__navi__item {
+  font-size: 12px;
+  padding: 0 0 12px 0;
+  color: #fff;
+}
+.cp-footer02__navi__item a {
+  font-size: 12px;
+  color: #fff;
 }
 .cp-footer02__navi__item a:hover {
   opacity: 0.7;
 }
-.cp-footer02__logo img {
-  height: 32px;
+.cp-footer02__logo:first-child img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 125px;
 }
-.cp-footer02__icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 24px;
-}
-.cp-footer02__icon:not(:last-child) {
-  margin-right: 24px;
-}
-.cp-footer02__icon a {
-  font-size: 38px;
-  color: #fff;
-  transition: 0.2s ease-in-out;
-}
-.cp-footer02__icon a:hover {
-  opacity: 0.7;
+.cp-footer02__logo:last-child img {
+  height: 38px;
+  width: 38px;
 }
 .cp-footer02__copywriter {
-  padding: 8px;
+  height: 60px;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 60px;
   color: #fff;
   text-align: center;
 }
@@ -207,7 +203,7 @@ li {
   list-style: none;
 }
 
-.font-ja {
+.font-01 {
   font-family: "";
 }
 

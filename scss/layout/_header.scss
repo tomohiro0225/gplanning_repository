@@ -7,12 +7,14 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        max-width: 1366px;
         margin: auto;
     }
     
     /* ロゴ */
     &__logo {
         line-height: 60px;
+        margin-left: 45px;
     }
     &__logo img {
         height: 32px;
@@ -49,6 +51,8 @@
         transition: .2s ease-in-out;
         color: #074466;
         text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
     }
     &__item a:hover {
         opacity: .7;
