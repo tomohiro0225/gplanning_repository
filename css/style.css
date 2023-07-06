@@ -54,7 +54,7 @@ table {
 }
 
 /* ヘッダー ------------------------------*/
-.cp-header01 {
+.l-header {
   height: 80px;
   width: 100%;
   background: #fff;
@@ -62,45 +62,45 @@ table {
   /* ナビゲーション */
   /* ハンバーガーメニュー */
 }
-.cp-header01__container {
+.l-header__container {
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1366px;
   margin: auto;
 }
-.cp-header01__logo {
+.l-header__logo {
   line-height: 60px;
   margin-left: 45px;
 }
-.cp-header01__logo img {
+.l-header__logo img {
   height: 32px;
   vertical-align: middle;
 }
-.cp-header01__logo img:hover {
+.l-header__logo img:hover {
   opacity: 0.7;
   transition: 0.2s ease-in-out;
 }
-.cp-header01__navi {
+.l-header__navi {
   line-height: 80px;
 }
-.cp-header01__items {
+.l-header__items {
   display: flex;
   list-style: none;
 }
-.cp-header01__item:not(:last-child) {
+.l-header__item:not(:last-child) {
   margin-right: 32px;
 }
-.cp-header01__item:last-child {
+.l-header__item:last-child {
   background: #074466;
 }
-.cp-header01__item:last-child a {
+.l-header__item:last-child a {
   padding: 0 60px;
   color: #fff;
   display: block;
   margin: 0 auto;
 }
-.cp-header01__item a {
+.l-header__item a {
   display: inline-block;
   transition: 0.2s ease-in-out;
   color: #074466;
@@ -108,23 +108,23 @@ table {
   font-size: 16px;
   font-weight: bold;
 }
-.cp-header01__item a:hover {
+.l-header__item a:hover {
   opacity: 0.7;
 }
-.cp-header01__hamburger__button, .cp-header01__hamburger__content {
+.l-header__hamburger__button, .l-header__hamburger__content {
   display: none;
 }
-.cp-header01__hamburger__item a {
+.l-header__hamburger__item a {
   text-decoration: none;
 }
 
 /* フッター ------------------------------*/
-.cp-footer02 {
+.l-footer {
   background: #074466;
   /* ナビゲーション */
   /* ロゴ */
 }
-.cp-footer02__navi {
+.l-footer__navi {
   display: flex;
   width: 100%;
   max-width: 1200px;
@@ -132,47 +132,47 @@ table {
   padding: 45px 0px 100px;
   height: 290px;
 }
-.cp-footer02__navi__group {
+.l-footer__navi__group {
   margin-left: 25px;
   width: 25%;
 }
-.cp-footer02__navi__group:not(:first-child) {
+.l-footer__navi__group:not(:first-child) {
   padding-left: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
-.cp-footer02__navi__title {
+.l-footer__navi__title {
   margin-bottom: 16px;
   font-size: 14px;
   color: #fff;
   font-weight: bold;
 }
-.cp-footer02__navi__title a {
+.l-footer__navi__title a {
   font-size: 14px;
   color: #fff;
 }
-.cp-footer02__navi__item {
+.l-footer__navi__item {
   font-size: 12px;
   padding: 0 0 12px 0;
   color: #fff;
 }
-.cp-footer02__navi__item a {
+.l-footer__navi__item a {
   font-size: 12px;
   color: #fff;
 }
-.cp-footer02__navi__item a:hover {
+.l-footer__navi__item a:hover {
   opacity: 0.7;
 }
-.cp-footer02__logo:first-child img {
+.l-footer__logo:first-child img {
   height: -webkit-min-content;
   height: -moz-min-content;
   height: min-content;
   width: 125px;
 }
-.cp-footer02__logo:last-child img {
+.l-footer__logo:last-child img {
   height: 38px;
   width: 38px;
 }
-.cp-footer02__copywriter {
+.l-footer__copywriter {
   height: 60px;
   font-size: 12px;
   line-height: 60px;
