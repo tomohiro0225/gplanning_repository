@@ -24,15 +24,18 @@
         font-size: 14px;
         color: #fff;
         font-weight: bold;
+        font-family: futura-pt, sans-serif;
         a{
             font-size: 14px;
             color: #fff;
+            font-family: futura-pt, sans-serif;
         }
     }
     &__navi__item {
         font-size: 12px;
         padding: 0 0 12px 0;
         color: #fff;
+        font-family: futura-pt, sans-serif;
         a {
         font-size: 12px;
         color: #fff;
@@ -48,6 +51,7 @@
             height: min-content;
             width: 125px;
         }
+        margin-bottom: 10px;
     }
     &__logo:last-child {
         img {

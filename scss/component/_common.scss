@@ -19,13 +19,25 @@ li{
 }
 
 //フォントの種類
-.font-01{
-    font-family: "";
+.font-fututa{
+    font-family: futura-pt, sans-serif;
 }
-.font-02{
-
+.font-noto-b{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+.font-noto-m{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.font-gothic-b{
+    font-family: yu-gothic-pr6n, sans-serif;
+    font-weight: bold;
+}
+.font-gothic-m{
+    font-family: yu-gothic-pr6n, sans-serif;
 }
 
+mt
 //pc/sp表示
 .pc-on{
     display: block;
