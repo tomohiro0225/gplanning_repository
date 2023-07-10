@@ -19,25 +19,21 @@ li{
 }
 
 //フォントの種類
-.font-fututa{
-    font-family: futura-pt, sans-serif;
+$font-fututa: futura-pt, sans-serif;
+$font-noto: 'Noto Sans JP', sans-serif;
+$font-gothic:  yu-gothic-pr6n, sans-serif;
+
+//margin-bottom
+.mb-10{
+    margin-bottom: 10px;
 }
-.font-noto-b{
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: bold;
+.mb-15{
+    margin-bottom: 15px;
 }
-.font-noto-m{
-    font-family: 'Noto Sans JP', sans-serif;
-}
-.font-gothic-b{
-    font-family: yu-gothic-pr6n, sans-serif;
-    font-weight: bold;
-}
-.font-gothic-m{
-    font-family: yu-gothic-pr6n, sans-serif;
+.mb-25{
+    margin-bottom: 25px;
 }
 
-mt
 //pc/sp表示
 .pc-on{
     display: block;
