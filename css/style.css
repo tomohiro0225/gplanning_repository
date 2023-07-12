@@ -169,8 +169,8 @@ li {
   margin: auto;
 }
 .l-header__logo {
-  line-height: 60px;
-  margin-left: 45px;
+  line-height: 80px;
+  margin-left: 30px;
 }
 .l-header__logo img {
   height: 32px;
@@ -188,12 +188,16 @@ li {
   list-style: none;
 }
 .l-header__item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 60px;
+}
+.l-header__item:not(:last-child) a {
+  font-family: futura-pt, sans-serif;
 }
 .l-header__item:last-child {
   background: #074466;
 }
 .l-header__item:last-child a {
+  font-family: futura-pt, sans-serif;
   padding: 0 60px;
   color: #fff;
   display: block;
@@ -299,5 +303,10 @@ li {
   padding: 24px 0px;
   text-align: center;
   color: #fff;
+}
+
+.keyVisual {
+  height: 340px;
+  background-color: #107840;
 }
 /*# sourceMappingURL=style.css.map */

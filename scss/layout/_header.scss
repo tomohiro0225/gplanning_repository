@@ -13,8 +13,8 @@
     
     /* ロゴ */
     &__logo {
-        line-height: 60px;
-        margin-left: 45px;
+        line-height: 80px;
+        margin-left: 30px;
     }
     &__logo img {
         height: 32px;
@@ -35,11 +35,18 @@
         list-style: none;
     }
     &__item:not(:last-child) {
-        margin-right: 32px;
+        margin-right: 60px;
+        a{
+            font-family: futura-pt, sans-serif;
+            font-size: 16px;
+        }
     }
     &__item:last-child{
         background: #074466;
         a{
+            font-family: futura-pt, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
             padding: 0 60px;
             color: #fff; 
             display: block;
