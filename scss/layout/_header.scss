@@ -7,7 +7,6 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
-        max-width: 1366px;
         margin: auto;
     }
     
@@ -63,14 +62,5 @@
     }
     &__item a:hover {
         opacity: .7;
-    }
-    
-    /* ハンバーガーメニュー */
-    &__hamburger__button,
-    &__hamburger__content {
-        display: none;
-    }
-    &__hamburger__item a {
-        text-decoration: none;
     }
 }

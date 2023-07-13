@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gplanning-privacy policy-</title>
-  <link rel="stylesheet" href="css/style.css?v=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <!-- header -->
@@ -17,7 +17,7 @@
             </h1><!-- /ロゴ -->
 
             <!-- ナビゲーション -->
-            <nav class="l-header__navi">
+            <nav class="l-header__navi pc-on">
                 <ul class="l-header__items">
                     <li class="l-header__item"><a href="">SERVICE</a></li>
                     <li class="l-header__item"><a href="">COMPANY</a></li>
@@ -27,6 +27,14 @@
                 </ul>
             </nav><!-- /ナビゲーション -->
 
+            <!-- ハンバーガー -->
+            <div class="menuTrigger sp-on">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- /ハンバーガー -->
+
         </div>
     </header>
     <!-- /header -->
@@ -34,7 +42,7 @@
     <main>
 
         <!-- keyvisual -->
-        <div class="keyVisual"></div>
+        <div class="keyVisual">privacy policy</div>
         <!-- /keyvisual -->
         
         <!-- gplan -->
@@ -60,18 +68,29 @@
         </section>
         <!-- /privacy -->
 
-        <!-- contact -->
-        <section class="contact">
-            <p class="contact__catch">まずはお気軽になんでもお問合せください</p>
-            <div class="contact__inner">
-                <div class="contact__btn contact__btn--red">メールでのお問合せ</div>
-                <div class="contact__inner__right">
-                    <div class="contact__btn contact__btn--white">06-666-6666</div>
-                    <p class="contact__time">受付時間9:00〜17:30（土日祝祭日を除く）</p>
+        <!-- l-contact -->
+        <section class="l-contact">
+            <div class="l-contact__up">
+                <div class="pc-on">
+                    <p class="l-contact__catch">まずはお気軽になんでもお問合せください</p>
+                </div>
+                <div class="sp-on">
+                    <p class="l-contact__catch">まずはお気軽に<br>なんでもお問合せください</p>
+                </div>
+            </div>
+            <div class="l-contact__under">
+                <div class="l-contact__btn l-contact__btn--red">
+                    <a href="#"><img src="/img/common/contact-btn-mail.png" alt="mail">メールでのお問合せ</a>
+                </div>
+                <div class="l-contact__under__right">
+                    <div class="l-contact__btn l-contact__btn--white">
+                        <a href="#"><img src="/img/common/contact-btn-call.png" alt="mail">06-666-6666</a>
+                    </div>
+                    <p class="l-contact__time">受付時間9:00〜17:30（土日祝祭日を除く）</p>
                 </div>
             </div>
         </section>
-        <!-- /contact -->
+        <!-- /l-contact -->
 
     </main>
 

@@ -1,5 +1,28 @@
 .privacy{
-    max-width: 1200px;
-    margin: 140px auto 0;
+    max-width: 1100px;
+    margin: 140px auto 100px;
+    &__text {
+        font-family: "Noto Sans CJK JP";
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        line-height: 33px;
+        text-align: left;
+        color: #1e324f;
+        margin-bottom: 50px;
+    }
+    &__text:last-child {
+        margin-bottom: 150px;
+    }
+    &__ceo {
+        font-family: "Noto Sans CJK JP";
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        line-height: 33px;
+        text-align: left;
+        color: #1e324f;
+        padding-bottom: 330px;
+    }
 
 }
+
+
