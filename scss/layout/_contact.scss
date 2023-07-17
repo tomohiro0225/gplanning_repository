@@ -112,15 +112,16 @@
 .l-contact {
     background-color: #F8F8F8;
     margin: 0 auto;
-    padding: 115px 0;
+    padding: 50px 0 80px;
     &__up{
         text-align: center;
+        margin-bottom: 20px;
     }
     &__catch {
         font-size: 15px;
         line-height: 18px;
-        margin-bottom: 25px;
-        padding: 0 12px;
+        margin-bottom: 20px;
+        padding: 0 24px;
     }
     &__catch::before {  
         width: 2px;
@@ -132,7 +133,6 @@
     }
     &__under {
         display: block;
-        justify-content: start;
         &__right {
             margin-left: 0px;
         }
@@ -145,6 +145,7 @@
     }
     &__btn--red {
         background-color: #FF0000;
+        margin:0 auto 20px;
         img{
             width: 25px;
             height: 20px;
@@ -157,7 +158,7 @@
     }
     &__btn--white {
         background-color: #fff;
-        margin-bottom: 10px;
+        margin:0 auto 10px;
         img{
             width: 30px;
             height: 30px;
@@ -169,13 +170,8 @@
         }
     }
     &__time {
-        font-family: YuGothic;
-        font-weight: bold;
-        font-size: 17px;
-        letter-spacing: 0.11em;
-        line-height: 18px;
-        text-align: center;
-        color: #f00;
+        font-size: 15px;
+        line-height: 22px;
     }
 
 }

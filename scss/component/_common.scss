@@ -18,20 +18,15 @@ li{
     list-style: none;
 }
 
-//フォントの種類
-$font-fututa: futura-pt, sans-serif;
-$font-noto: 'Noto Sans JP', sans-serif;
-$font-gothic:  yu-gothic-pr6n, sans-serif;
-
-//margin-bottom
-.mb-10{
-    margin-bottom: 10px;
-}
+//margin調整
 .mb-15{
     margin-bottom: 15px;
 }
 .mb-25{
     margin-bottom: 25px;
+}
+.mb-40{
+    margin-bottom: 40px;
 }
 
 //pc/sp表示
@@ -45,34 +40,44 @@ $font-gothic:  yu-gothic-pr6n, sans-serif;
 // 背景色
 
 
+//ぱんくず
+/* 共通 ------------------------------*/
+*[class*="cp-"],
+*[class*="cp-"] * {
+    box-sizing: border-box;
+}
 
-@media screen and (max-width:499px) {
+//breadcrumb
+.c-breadcrumb{
+    margin-top: 12px;
+    &__lists {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        font-family:  yu-gothic-pr6n, sans-serif;
+        margin-right: 18px;
+        font-size: 13px;
+        color: #074466;
+        line-height: 18px;
+        a{
+            font-family:  yu-gothic-pr6n, sans-serif;
+            color: #074466;
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width:768px) {
     .pc-on{
         display: none;
     }
     .sp-on{
         display: block;
-    }
-
-    // メニュー
-    .menu-tirgger{
-        width: 60px;
-        height: 60px;
-        background-color: #fff;
-        &__wrap{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        span{
-            width: 40px;
-            height: 2px;
-            background: #000;
-            display: block;
-        }
-        span:nth-child(2n){
-            margin: 10px 0;
-        }
     }
 }

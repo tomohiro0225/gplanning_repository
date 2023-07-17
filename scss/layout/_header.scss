@@ -64,3 +64,54 @@
         opacity: .7;
     }
 }
+
+
+@media screen and (max-width:768px) {
+    /* ヘッダー ------------------------------*/
+    .l-header {
+        height: 60px;
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+        }
+        
+        /* ロゴ */
+        &__logo {
+            line-height: 60px;
+            margin-left: 23px;
+        }
+        &__logo img {
+            height: 29px;
+        }
+        
+    }
+
+    // メニュー
+    .menuTrigger{
+        width: 28px;
+        height: auto;
+        background-color: #fff;
+        position: relative;
+        margin-right: 23px;
+        &__wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            width: 28px;
+            height: 2px;
+            background: #074466;
+            display: block;
+        }
+        span:nth-child(2n){
+            margin: 7px 0;
+        }
+        span:last-child{
+            width: 14px;
+        }
+    }
+}

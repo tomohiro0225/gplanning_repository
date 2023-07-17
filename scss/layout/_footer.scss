@@ -49,21 +49,17 @@
     }
     &__title {
         margin-bottom: 25px;
-        font-family:  yu-gothic-pr6n, sans-serif;
-        font-size: 14px;
-        color: #fff;
-        span{
-            display: block;
-            text-align: left;
-        }
-        span:first-child{
-            margin-bottom: 15px;
-        }
-        span:last-child{
-            margin-left: 15px;
+        a{
             font-family:  yu-gothic-pr6n, sans-serif;
-            font-size: 12px;
+            font-size: 14px;
+            color: #fff;
         }
+        &--delta{
+            display: none;
+        }
+    }
+    &__title:first-child {
+        margin-bottom: 12px;
     }
     &__text {
         font-family:  yu-gothic-pr6n, sans-serif;
@@ -71,6 +67,7 @@
         line-height: 21px;
         color: #fff;
         margin-left: 15px;
+        margin-bottom: 25px;
 
     }
     &__copyright {
@@ -80,6 +77,90 @@
         padding: 24px 0px;
         text-align: center;
         color: #fff;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .l-footer {
+        background-color: #074466;
+        &__nav{
+            padding: 25px 20px 50px;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            width: auto;
+            padding: 0;
+            height: fit-content;
+        }
+        &__item:not(:first-child) {
+            border-left: none;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        &__logo {
+            margin-bottom: 10px;
+            img{
+                width: 100px;
+                height: 26px;
+            }
+            .instagram {
+                margin-left: 00px;
+                width: 27px;
+                height: 27px;
+            }
+        }
+        &__ceo {
+            margin-bottom: 12px;
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__address {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 9px;
+            line-height: 14px;
+        }
+        &__tel {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 9px;
+        }
+        &__title {
+            a{
+                font-family: "Noto Sans CJK JP";
+                font-weight: bold;
+                font-size: 11px;
+            }
+            &--delta{
+                display: inline-block;
+                font-size: 1px;
+                margin: 0 7px 0 0;
+            }
+        }
+        &__title:first-child {
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 21px;
+            margin:0 0 25px 25px;
+    
+        }
+        &__copyright {
+            font-size: 12px;
+            font-family: futura-pt, sans-serif;
+            font-weight: bold;
+            padding: 0px 0px 15px;
+            text-align: center;
+            color: #fff;
+        }
     }
 }
 
