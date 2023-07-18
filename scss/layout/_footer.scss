@@ -71,7 +71,7 @@
 
     }
     &__copyright {
-        font-size: 12px;
+        font-size: 13px;
         font-family: futura-pt, sans-serif;
         font-weight: bold;
         padding: 24px 0px;
@@ -84,7 +84,7 @@
     .l-footer {
         background-color: #074466;
         &__nav{
-            padding: 25px 20px 50px;
+            padding: 25px 20px 40px;
         }
         &__list {
             display: block;
@@ -93,12 +93,16 @@
             width: auto;
             padding: 0;
             height: fit-content;
+            margin-bottom: 25px;
+        }
+        &__item:first-child {
+            margin-bottom: 40px;
+        }
+        &__item:last-child {
+            margin-bottom: 0px;
         }
         &__item:not(:first-child) {
             border-left: none;
-        }
-        &__item:not(:last-child) {
-            margin-bottom: 25px;
         }
         &__logo {
             margin-bottom: 10px;

@@ -11,22 +11,13 @@
         opacity: 0.5;
     }
     &__bg-blue{
-        background-color: #198AF9;
-        width: 25%;
-        height: 100%;
-        position: absolute;
-        top: 50%;
-        left: 0%;
-        transform: translate(-50%, -50%);
-        &-slice{
             background-color: #198AF9;
-            width: 50%;
+            width: 60%;
             height: 100%;
             position: absolute;
             top: 50%;
-            left: 20%;
+            left: 10%;
             transform: translate(-50%, -50%) skewX(-30deg);
-        }
     }
     &__title {    
         text-align: left;
@@ -70,6 +61,9 @@
         height: 240px;    
         &__title {    
             left: 25%;
+        }
+        &__bg-blue{
+            left: 15%;
         }
         &__title-txt {
             font-size: 50px;

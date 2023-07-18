@@ -1,5 +1,192 @@
-.contact{
-    max-width: 1200px;
-    margin: 140px auto 0;
+.contactForm{
+    max-width: calc(1000px);
+    margin: 90px auto 100px;
 
+    &__inner{
+        border: solid 1px #C1BCBC;
+        padding: 56px 5% 0;
+    }
+
+    /* ラベル */
+    &--label {
+        padding: 0px 5px;
+        vertical-align: bottom;
+        font-size: 16px;
+        color: #FF0000;
+    }
+
+    /* お問合せフォーム ------------------------------*/
+    /* アイテム */
+    &__item{
+        margin-bottom: 62px;
+        dl{
+            display: flex;
+            justify-content: space-between;
+        }
+        dd{
+            width: 64%;
+            input,textarea{
+                width: 100%;
+                display: block;
+                font-size: 16px;
+                line-height: 24px;
+                border: solid #C1BCBC 1px;
+                padding: 0;
+            }
+            input{
+                height: 67px;
+            }
+            textarea{
+                height: 234px;
+            }
+        }
+    }
+    &__item:nth-child(2n) {
+        margin-bottom: 38px;
+    }
+    &__item:last-child {
+        margin-bottom: 100px;
+    }
+
+    //タイトル,氏名,プライバシー共通
+    &__title,&__description,&__privacy {
+        font-family: "Noto Sans CJK JP";
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        text-align: left;
+        color: #1e324f;
+    }
+
+      //名前
+    &__names {
+        display: flex;
+        justify-content: space-between;
+    } 
+    &__name {
+        width: calc(100% / 2 - 5px);
+        input{
+            margin-bottom: 8px;
+        }
+    }
+    &__name:not(:last-child) {
+        margin-right: 10px;
+    }
+    //名前の例
+    &__description {
+        line-height: 16px;
+    }
+     
+
+    //プライバシー同意
+    &__privacy {
+        margin-bottom: 100px;
+        &__text{
+            margin-top: 5px;
+            text-align: left;
+            display: block;
+            
+        }
+    }
+
+    /* ボタン */
+    &__btn{
+        text-align: center;
+        margin-bottom: 100px;
+    }
+    &__submit {
+        color: #fff;
+        font-family: "Noto Sans CJK JP";
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        margin: 0;
+        padding: 12px 86px;
+        color: #fff;
+        background-color: #198AF9;
+        cursor: pointer;
+        text-decoration: none;
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .contactForm{
+        margin: 40px auto 50px;
+        padding: 0 20px;
+
+        &__inner{
+            padding: 30px 24px 0;
+        }
+    
+        /* ラベル */
+        &--label {
+            padding: 0px 0;      
+        }
+    
+        /* お問合せフォーム ------------------------------*/
+        /* アイテム */
+        &__item{
+            margin-bottom: 30px;
+            dl{
+                display: block;
+            }
+            dt{
+                margin-bottom: 9px;
+            }
+            dd{
+                width: auto;
+                input,textarea{
+                    line-height: 21px;
+                }
+                input{
+                    height: 40px;
+                }
+                textarea{
+                    height: 90px;
+                }
+            }
+        }
+        &__item:nth-child(2n) {
+            margin-bottom: 30px;
+        }
+        &__item:last-child {
+            margin-bottom: 70px;
+        }
+    
+        //タイトル,氏名,プライバシー共通
+        &__title,&__description,&__privacy {
+            font-size: 14px;
+        }
+        &__name {
+            width: calc(100% / 2 - 4px);
+        }
+        &__name:not(:last-child) {
+            margin-right: 8px;
+        }
+
+         
+        //プライバシー同意
+        &__privacy {
+            margin-bottom: 40px; 
+            &__text{
+                font-size: 11px;
+                margin-top: 5px;
+                line-height: 16px;
+                
+            }
+        }
+    
+        /* ボタン */ 
+        &__btn{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &__submit {
+            font-size: 14px;
+            padding: 10px 60px;
+        }
+    }
 }

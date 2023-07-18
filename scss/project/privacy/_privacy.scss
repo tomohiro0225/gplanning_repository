@@ -8,10 +8,7 @@
         line-height: 33px;
         text-align: left;
         color: #1e324f;
-        margin-bottom: 40px;
-    }
-    &__text:last-child {
-        margin-bottom: 150px;
+        margin-bottom: 50px;
     }
     &__ceo {
         font-family: "Noto Sans CJK JP";
@@ -20,6 +17,7 @@
         line-height: 33px;
         text-align: left;
         color: #1e324f;
+        margin-top: 150px;
     }
 
 }
@@ -31,11 +29,10 @@
         &__text {
             font-size: 14px;
             line-height: 25px;
-        }
-        &__text:last-child {
-            margin-bottom: 100px;
+            margin-bottom: 35px;
         }
         &__ceo {
+            margin-top: 100px;
             font-size: 14px;
             line-height: 25px;
         }
