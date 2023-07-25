@@ -13,7 +13,7 @@
 
             <!-- ロゴ -->
             <h1 class="l-header__logo">
-                <a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/img/common/logo-red.png" alt="G planning"></a>
+                <a href="index.php"><img src="<?php echo get_template_directory_uri(); ?>/img/common/logo-red.png" alt="G planning"></a>
             </h1><!-- /ロゴ -->
 
             <!-- ナビゲーション -->
@@ -23,7 +23,7 @@
                     <li class="l-header__item"><a href="">COMPANY</a></li>
                     <li class="l-header__item"><a href="">NEWS</a></li>
                     <li class="l-header__item"><a href="">Q&A</a></li>
-                    <li class="l-header__item"><a href="<?php echo get_template_directory_uri(); ?>/contact.html">CONTACT</a></li>
+                    <li class="l-header__item"><a href="<?php echo get_page_link( $contact );?>">CONTACT</a></li>
                 </ul>
             </nav><!-- /ナビゲーション -->
 
@@ -40,3 +40,16 @@
         </div>
     </header>
     <!-- /header -->
+
+    <main>
+
+        <!-- keyvisual -->
+        <div class="keyVisual">
+            <div class="keyVisual__bg-lightblue"></div>
+            <div class="keyVisual__bg-blue"></div>
+            <div class="keyVisual__title">
+                <p class="keyVisual__title-txt keyVisual__title-txt--contact">ここにタイトルが入ります</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="keyVisual__title-underline">
+            </div>
+        </div>
+        <!-- /keyvisual -->

@@ -1,18 +1,5 @@
 <?php get_header(); ?>
 
-    <main>
-
-        <!-- keyvisual -->
-        <div class="keyVisual">
-            <div class="keyVisual__bg-lightblue"></div>
-            <div class="keyVisual__bg-blue"></div>
-            <div class="keyVisual__title">
-                <p class="keyVisual__title-txt">404</p>
-                <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="keyVisual__title-underline">
-            </div>
-        </div>
-        <!-- /keyvisual -->
-
         <!-- breadcrumb -->
         <div class="c-breadcrumb pc-on">
             <ul class="c-breadcrumb__lists">
