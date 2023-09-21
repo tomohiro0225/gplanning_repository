@@ -1,0 +1,358 @@
+/* フォーム */
+.contact-form {
+    padding-bottom: 55px;
+
+    //タイトル
+    .c-secTitle {
+        margin: 0 auto 55px;
+    }
+    
+    &__form{ 
+        background-color: #EDF7F9;
+        padding: 55px 20px;
+        margin-left: 7%;
+        width: calc(100% - 40px - 7%);
+    }
+    
+    //誤りがないかの確認文
+    &__before{
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.15em;
+        line-height: 28px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 50px;
+    }
+    
+    /* ラベル */
+    &__label {
+        padding: 2px 14px;
+        font-size: 12px;
+        text-align: left;
+        color: #000;
+        margin-left: 13px;
+        border-radius: 15px;
+    }
+    &__label-danger {
+        background: #E80101;
+        color: #fff;
+    }
+    
+    /* お問合せフォーム ------------------------------*/
+    &__items{
+        max-width: 1000px;
+        margin: 0  auto;
+    }
+    /* アイテム */
+    &__item{
+        dl{
+            display: flex;
+        }
+        dt{
+            width: calc(100% - 75%);
+        }
+        dd{
+            width: 75%;
+            align-items: center;
+            select, input ,textarea{
+                display: block;
+                font-size: 14px;
+                height: 30px;
+            } 
+            textarea{
+                width: calc(100% - 40px);
+                height: 159px;
+                padding: 10px;
+            } 
+        }
+        &__name{
+            display: flex;
+            &--input{
+                width: 121px;
+                margin-right: 16px;
+            }
+            &--input:last-child{
+                margin-right: 0px;
+            }
+            &--example{
+                font-family: "Yu Gothic";
+                font-weight: normal;
+                font-size: 16px;
+                margin-right: 7px;
+            }
+        }
+        &__mail{
+            &--input{
+                width: 342px;
+            }
+
+        }
+        &__tel{
+            display: flex;
+            &--input{
+                width: 93px;
+                margin-right: 7px;
+            }
+            &--line::after{
+                content: '';
+                flex-grow: 1;
+                height: 1px;
+                background: #000000;
+                display: block;
+                width: 7px;
+                position: relative;
+                top: 50%;
+                margin-right: 7px;
+              }
+            &--input:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 26px;
+    }
+    
+    //タイトル
+    &__title {
+        font-family: "Yu Gothic";
+        font-size: 14px;
+        text-align: right;
+        color: #000;
+        margin-right: 47px;
+        height: 30px;
+        line-height: 30px;
+        //入力項目
+        &--name{
+            display: inline-block;
+        }
+    }
+
+    //個人情報取り扱い
+    &__privicy {
+        display: flex;    
+        align-items: center;
+        .check-box {
+            display: flex;
+            display: inline-block;
+            margin:0 9px 0 0;   
+        }
+
+        &__check{
+            display: flex;    
+            align-items: center;
+        }
+        
+        &--doui,&-link {
+            font-family: "Noto Sans CJK JP";
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+        }
+        
+        &-link {
+            color: #198af9;
+            margin-left: 47px;
+            transition: all 0.5s;
+            height: 30px;
+            line-height: 30px;
+        }
+        
+        &-link:hover {
+            cursor: pointer;
+            border-bottom: solid 1px #198af9;
+        }
+    }
+    
+    
+    
+    
+    
+    label:not(:first-child) {
+        margin-left: 24px;
+    }
+    
+    /* ボタン */
+    &--submit {
+        font-family: "Yu Gothic";
+        color: #fff;
+        background: #198AF9;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+        padding: 19px 110px;
+        border: solid 2px #198AF9;
+        display: block;
+        margin: 68px auto 0;
+    }
+    &--submit:hover {
+        color: #1B1B1D;
+        background: #fff;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    /* フォーム */
+    .contact-form {
+        //タイトル
+        .c-secTitle {
+            margin: 0 auto 30px;
+        }
+        
+        &__form{ 
+            background-color: #EDF7F9;
+            padding: 30px 20px;
+            margin-left: 0%;
+            width: calc(100% - 40px);
+        }
+        
+        //誤りがないかの確認文
+        &__before{
+            font-weight: normal;
+            font-size: 16px;
+            letter-spacing: 0.15em;
+            line-height: 28px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 50px;
+        }
+        
+        /* ラベル */
+        &__label {
+            padding: 2px 14px;
+            font-size: 12px;
+            text-align: left;
+            color: #000;
+            margin-left: 13px;
+            border-radius: 15px;
+        }
+        &__label-danger {
+            background: #E80101;
+            color: #fff;
+        }
+        
+        /* お問合せフォーム ------------------------------*/
+        &__items{
+            max-width: 1000px;
+        }
+        /* アイテム */
+        &__item{
+            dl{
+                display: block;
+            }
+            dt{
+                width: auto;
+            }
+            dd{
+                width: auto;
+                align-items: left;
+                select, input ,textarea{
+                    display: block;
+                    font-size: 14px;
+                    height: 30px;
+                } 
+                textarea{
+                    width: calc(100% - 40px);
+                    height: 159px;
+                    padding: 10px;
+                } 
+            }
+            &__name{
+                &--input{
+                    width: 100px;
+                }
+                &--input:last-child{
+                    margin-right: 0px;
+                }
+                &--example{
+                    font-size: 14px;
+                }
+            }
+            &__mail{
+                &--input{
+                    width: calc(100% - 40px);
+                }
+    
+            }
+            &__tel{
+                display: flex;
+                &--input{
+                    width: 85px;
+                    margin-right: 7px;
+                }
+                &--line::after{
+                    content: '';
+                    flex-grow: 1;
+                    height: 1px;
+                    background: #000000;
+                    display: block;
+                    width: 7px;
+                    position: relative;
+                    top: 50%;
+                    margin-right: 7px;
+                  }
+                &--input:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 26px;
+        }
+        
+        //タイトル
+        &__title {
+            text-align: left;
+            margin-right: 0px;
+            margin-bottom: 10px;
+            height: 20px;
+            line-height: 20px;
+            //入力項目
+            &--name{
+                display: inline-block;
+            }
+        }
+
+        //個人情報取り扱い
+        &__privicy {
+            display: block;    
+            
+            &--doui,&-link {
+                font-size: 14px;
+                height: 30px;
+                line-height: 30px;
+            }
+            
+            &-link {
+                color: #198af9;
+                margin-left: 0px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        
+        
+        
+        
+        
+        label:not(:first-child) {
+            margin-left: 24px;
+        }
+        
+        /* ボタン */
+        &--submit {
+            margin: 30px auto 0;
+        }
+        &--submit:hover {
+            color: #1B1B1D;
+            background: #fff;
+        }
+    }
+}

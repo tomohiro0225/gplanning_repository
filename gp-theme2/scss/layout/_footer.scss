@@ -1,0 +1,170 @@
+.l-footer {
+    background-color: #074466;
+    &__nav{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 45px 20px 100px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        width: calc(100% / 4 - 40px);
+        padding: 0 20px;
+        height: 290px;
+    }
+    &__item:not(:first-child) {
+        border-left: solid 1px #fff;
+    }
+    &__logo {
+        margin-bottom: 10px;
+        img{
+            width: 120px;
+            height: 37px;
+        }
+        .instagram {
+            margin-left: 10px;
+            width: 38px;
+            height: 38px;
+        }
+    }
+    &__ceo {
+        margin-bottom: 15px;
+        font-family:  yu-gothic-pr6n, sans-serif;
+        font-size: 15px;
+        line-height: 21px;
+        color: #fff;
+    }
+    &__address {
+        font-family:  yu-gothic-pr6n, sans-serif;
+        font-size: 12px;
+        line-height: 21px;
+        color: #fff;
+    }
+    &__tel {
+        font-family:  yu-gothic-pr6n, sans-serif;
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+    }
+    &__title {
+        margin-bottom: 25px;
+        a{
+            font-family:  yu-gothic-pr6n, sans-serif;
+            font-size: 14px;
+            color: #fff;
+        }
+        &--delta{
+            display: none;
+        }
+    }
+    &__title:first-child {
+        margin-bottom: 12px;
+    }
+    &__text {
+        font-family:  yu-gothic-pr6n, sans-serif;
+        font-size: 12px;
+        line-height: 21px;
+        color: #fff;
+        margin-left: 15px;
+        margin-bottom: 25px;
+
+    }
+    &__copyright {
+        font-size: 13px;
+        font-family: futura-pt, sans-serif;
+        font-weight: bold;
+        padding: 24px 0px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .l-footer {
+        background-color: #074466;
+        &__nav{
+            padding: 25px 20px 40px;
+        }
+        &__list {
+            display: block;
+        }
+        &__item {
+            width: auto;
+            padding: 0;
+            height: fit-content;
+            margin-bottom: 25px;
+        }
+        &__item:first-child {
+            margin-bottom: 40px;
+        }
+        &__item:last-child {
+            margin-bottom: 0px;
+        }
+        &__item:not(:first-child) {
+            border-left: none;
+        }
+        &__logo {
+            margin-bottom: 10px;
+            img{
+                width: 100px;
+                height: 26px;
+            }
+            .instagram {
+                margin-left: 00px;
+                width: 27px;
+                height: 27px;
+            }
+        }
+        &__ceo {
+            margin-bottom: 12px;
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__address {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 9px;
+            line-height: 14px;
+        }
+        &__tel {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 9px;
+        }
+        &__title {
+            a{
+                font-family: "Noto Sans CJK JP";
+                font-weight: bold;
+                font-size: 11px;
+            }
+            &--delta{
+                display: inline-block;
+                font-size: 1px;
+                margin: 0 7px 0 0;
+            }
+        }
+        &__title:first-child {
+            margin-bottom: 15px;
+        }
+        &__text {
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 21px;
+            margin:0 0 25px 25px;
+    
+        }
+        &__copyright {
+            font-size: 12px;
+            font-family: futura-pt, sans-serif;
+            font-weight: bold;
+            padding: 0px 0px 15px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+}
+

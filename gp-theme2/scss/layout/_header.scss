@@ -1,0 +1,117 @@
+/* ヘッダー ------------------------------*/
+.l-header {
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: auto;
+    }
+    
+    /* ロゴ */
+    &__logo {
+        line-height: 80px;
+        margin-left: 30px;
+    }
+    &__logo img {
+        height: 32px;
+        vertical-align: middle;
+    }
+    &__logo img:hover {
+        opacity: 0.7;
+        transition: .2s ease-in-out;
+    }
+    
+    /* ナビゲーション */
+    &__navi {
+        line-height: 80px;
+    }
+    
+    &__items {
+        display: flex;
+        list-style: none;
+    }
+    &__item:not(:last-child) {
+        margin-right: 60px;
+        a{
+            font-family: futura-pt, sans-serif;
+            font-size: 16px;
+        }
+    }
+    &__item:last-child{
+        background: #074466;
+        a{
+            font-family: futura-pt, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 60px;
+            color: #fff; 
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__item a {
+        display: inline-block;
+        transition: .2s ease-in-out;
+        color: #074466;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__item a:hover {
+        opacity: .7;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    /* ヘッダー ------------------------------*/
+    .l-header {
+        height: 60px;
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: auto;
+        }
+        
+        /* ロゴ */
+        &__logo {
+            line-height: 60px;
+            margin-left: 23px;
+        }
+        &__logo img {
+            height: 29px;
+        }
+        
+    }
+
+    // メニュー
+    .menuTrigger{
+        width: 28px;
+        height: auto;
+        background-color: #fff;
+        position: relative;
+        margin-right: 23px;
+        &__wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            width: 28px;
+            height: 2px;
+            background: #074466;
+            display: block;
+        }
+        span:nth-child(2n){
+            margin: 7px 0;
+        }
+        span:last-child{
+            width: 14px;
+        }
+    }
+}

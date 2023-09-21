@@ -1,0 +1,47 @@
+// conponent/* 見出し ------------------------------*/
+.c-secTitle {
+    position: relative;
+    color: #074466;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 90px;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 50px;
+        margin: 0 auto;
+        background: #074466;
+    }
+    & span:first-child {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 32px;
+    }
+    & span {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .c-secTitle {
+        margin-bottom: 40px;
+        &::after {
+            width: 40px;
+        }
+        & span:first-child {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+        & span {
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+}
