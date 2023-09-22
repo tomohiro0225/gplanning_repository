@@ -1,0 +1,132 @@
+//企業概要
+.about {
+    position: relative;
+    &__bg {
+        background-color: #EDF7F9;
+        margin-left: 7%;
+        width: calc(100% - 40px);
+        height: 1100px;
+    }
+    &__wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__table {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        white-space: nowrap;
+        border-top: solid 1px #707070;
+        dt,dt+dd{
+            font-family: "Noto Sans CJK JP";
+            font-size: 17px;
+            letter-spacing: 0.1em;
+            line-height: 30px;
+            text-align: left;
+            color: #333;
+            border-bottom: solid 1px #707070;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        dt:last-of-type,dd:last-of-type{
+            border-bottom: none;
+        }
+        dt{
+            width: calc(30% - 22px);
+            font-weight: bold;
+            padding-left: 22px;
+        }
+        dt+dd{
+            width: calc(100% - 30%);
+            font-weight: 500;
+        }
+        
+        
+    }
+    
+}
+
+
+@media screen and (max-width:768px) {
+    //企業概要
+    .about {
+        position: static;
+        .c-secTitle {
+
+        }        
+        &__wrapper{
+            position: static;
+            top: 0%;
+            left: 0%;
+            transform: translate(-0%, -0%);
+            padding: 0;
+        }
+        &__table {
+            padding: 40px 32px;
+            display: block;
+            flex-wrap: nowrap;
+            border-top: none;
+            background-color: #EDF7F9;
+            dt,dt+dd{
+                font-family: "Noto Sans CJK JP";
+                letter-spacing: 0.1em;
+                line-height: 22px;
+                text-align: left;
+                color: #333;
+                border-bottom: none;
+                padding-top: 10px;
+                padding-bottom: 00px;
+            }
+            dt:last-of-type,dd:last-of-type{
+                border-bottom: none;
+                border-bottom: none;
+            }
+            dt{
+                width: auto;
+                font-weight: bold;
+                padding-left: 0px;
+                font-size: 15px;
+            }
+            dt+dd{
+                width: auto;
+                padding-bottom: 10px;
+                border-bottom: solid 1px #707070;
+                font-size: 14px;
+            }           
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+//アクセス
+.access {
+    margin: 70px auto 0;
+}
+
+.access__map {
+    width: 100%;
+    height: 570px;
+}
+
+@media screen and (max-width:768px) {
+    //アクセス
+    .access {
+        margin: 50px auto 0;
+    }
+    .access__map {
+        height: 310px;
+    }
+
+}
