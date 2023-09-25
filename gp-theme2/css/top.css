@@ -1,0 +1,197 @@
+.top-layout {
+  margin-bottom: 60px;
+}
+
+.font-light-blue {
+  color: #198AF9;
+}
+
+.top-news {
+  margin: 0 auto 60px;
+}
+.top-news__table {
+  max-width: 1000px;
+  padding: 0 0 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  border-top: solid 1px #707070;
+}
+.top-news__table dt, .top-news__table dt + dd {
+  font-family: "Noto Sans CJK JP";
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  text-align: left;
+  color: #000;
+  border-bottom: solid 1px #707070;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.top-news__table dt {
+  width: calc(30% - 22px);
+  font-weight: bold;
+  padding-left: 22px;
+}
+.top-news__table dt + dd {
+  width: 70%;
+  font-weight: 500;
+}
+.top-news__label {
+  font-family: Futura;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #fff;
+  padding: 4px 10px;
+  background-color: #FF0000;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-news__table {
+    padding: 0 50px 40px;
+    display: block;
+    border-top: none;
+  }
+  .top-news__table dt, .top-news__table dt + dd {
+    font-family: "Noto Sans CJK JP";
+    letter-spacing: 0.1em;
+    line-height: 22px;
+    text-align: left;
+    color: #333;
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 0px;
+  }
+  .top-news__table dt {
+    width: auto;
+    font-weight: bold;
+    padding-left: 0px;
+    font-size: 15px;
+  }
+  .top-news__table dt:first-of-type {
+    padding-top: 0px;
+  }
+  .top-news__table dt + dd {
+    width: auto;
+    padding-bottom: 10px;
+    border-bottom: solid 1px #707070;
+    font-size: 14px;
+    white-space: wrap;
+  }
+  .top-news__label {
+    font-size: 9px;
+    padding: 2px 10px;
+    margin-left: 5px;
+  }
+}
+.top-ec__worry {
+  color: white;
+  font-size: 22px;
+  line-height: 288px;
+  text-align: center;
+  width: 100%;
+  height: 288px;
+  margin: 0 auto 60px;
+  background-color: rgba(0, 0, 255, 0.7);
+}
+.top-ec__consoulation {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  background-color: #EDF7F9;
+}
+.top-ec__consoulation__wrapper {
+  padding: 66px 0 45px;
+}
+.top-ec__consoulation__text {
+  font-family: "Noto Sans CJK JP";
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+  line-height: 40px;
+  text-align: center;
+  color: #000;
+  padding: 0px 0 29px;
+}
+.top-ec__consoulation__label {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  text-align: left;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 24px;
+  margin: 0 auto;
+  padding: 18px 35px;
+  background-color: #FF981D;
+}
+
+@media screen and (max-width: 768px) {
+  .top-ec__worry {
+    color: white;
+    font-size: 22px;
+    line-height: 288px;
+    text-align: center;
+    width: 100%;
+    height: 288px;
+    margin: 0 auto 60px;
+    background-color: rgba(0, 0, 255, 0.7);
+  }
+  .top-ec__consoulation {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    background-color: #EDF7F9;
+  }
+  .top-ec__consoulation__wrapper {
+    padding: 25px 0 30px;
+  }
+  .top-ec__consoulation__text {
+    font-size: 17px;
+    line-height: 25px;
+    padding: 0px 0 17px;
+  }
+  .top-ec__consoulation__label {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 10px 35px;
+    border-radius: 0;
+    text-align: center;
+  }
+}
+.top-work__text {
+  margin-bottom: 45px;
+  font-family: "Noto Sans CJK JP";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 25px;
+  text-align: center;
+  color: #1e324f;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 45px;
+}
+.top-work__slider__img {
+  padding-right: 43px;
+}
+.top-work__slider__img:nth-child(2n) {
+  padding-top: 31px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-work__text {
+    font-size: 15px;
+    line-height: 19px;
+    margin: 0 auto 28px;
+  }
+}
+/*# sourceMappingURL=top.css.map */

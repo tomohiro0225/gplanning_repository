@@ -1,3 +1,165 @@
+// 縦ロゴ
+.g-planning__logo {
+    font-family: "Yu Mincho";
+    font-weight: 600;
+    font-size: 152px;
+    line-height: 162px;
+    text-align: left;
+    color: #e6e6e6;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+
+// 企業理念
+.mission {
+    margin-bottom: 100px;
+    position: relative;
+    &__catch {
+        max-width: 764px;
+        margin: 45px auto;
+        padding: 0 45px;
+    }
+    &__text {
+        font-family: "Noto Sans CJK JP";
+        font-weight: 500;
+        font-size: 23px;
+        letter-spacing: 0.07em;
+        line-height: 38px;
+        text-align: center;
+        color: #074466;
+    }
+
+}
+//レスポンシブ
+@media screen and (max-width:768px) {
+    // 縦ロゴ
+    .g-planning__logo {
+        font-family: "Yu Mincho";
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 50px;
+        top: 100px;
+        right: 1%;
+    }
+
+    // 企業理念
+    .mission {
+        margin-bottom: 60px;
+        .c-secTitle{
+            margin-bottom: 25px;
+        }
+        &__catch {
+            margin: 0px auto 25px;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #000;
+        }
+
+    }
+}
+
+
+
+// ご挨拶
+.greeting {
+    margin-bottom: 100px;
+    &__bg{
+        background-image: url(../img/company/greeting-pc.png);
+        background-size:  cover;
+        background-repeat: no-repeat;
+        padding: 70px 10% 50px 2%;
+        margin: 0 auto;
+    }
+    &__contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__left {
+            margin-right: 3%;
+        }
+    }
+    &__catch {
+        font-family: "Noto Sans CJK JP";
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 0.02em;
+        line-height: 25px;
+        text-align: center;
+        color: #fff;
+        background: #3FA9F5;
+        white-space: nowrap;
+        padding: 9px 15px;
+        display: inline-block;
+    }
+    &__catch:not(:last-child){
+        margin-bottom: 12px;
+    }
+    &__text {
+        font-family: "Yu Gothic";
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        line-height: 25px;
+        text-align: left;
+        color: #1e324f;
+        padding-bottom: 30px;
+    }
+    &__name {
+        font-family: "Yu Gothic";
+        font-weight: normal;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+        text-align: right;
+        color: #333;
+    }
+}
+//レスポンシブ
+@media screen and (max-width:768px) {
+    // ご挨拶
+    .greeting {
+        margin-bottom: 100px;
+        &__bg{
+            background-image: url(../img/company/greeting-sp.png);
+            background-size:  auto;
+            background-position: center;
+            padding: 55px 43px 65px ;
+            margin: 0 auto;
+        }
+        &__contain {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__left {
+                margin-right: 0%;
+            }
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 23px;
+            text-align: left;
+            color: #fff;
+            padding-bottom: 23px;
+        }
+        &__name {
+            font-size: 14px;
+            line-height: 14px;
+            text-align: left;
+            color: #fff;
+        }
+    }
+}
+
+
+
+
 //企業概要
 .about {
     position: relative;
@@ -49,8 +211,7 @@
     }
     
 }
-
-
+//レスポンシブ
 @media screen and (max-width:768px) {
     //企業概要
     .about {
@@ -71,6 +232,8 @@
             flex-wrap: nowrap;
             border-top: none;
             background-color: #EDF7F9;
+            width: auto;
+            white-space: normal;
             dt,dt+dd{
                 font-family: "Noto Sans CJK JP";
                 letter-spacing: 0.1em;
@@ -105,11 +268,6 @@
 
 
 
-
-
-
-
-
 //アクセス
 .access {
     margin: 70px auto 0;
@@ -119,7 +277,7 @@
     width: 100%;
     height: 570px;
 }
-
+//レスポンシブ
 @media screen and (max-width:768px) {
     //アクセス
     .access {
