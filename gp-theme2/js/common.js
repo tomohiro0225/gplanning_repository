@@ -1,12 +1,15 @@
 $(function () {
   $('.top-work__slider').slick({
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      dots: false,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 5000,
+    cssEase: "linear",
   });
 
 });

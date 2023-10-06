@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="l-header">
+    <header class="l-header index-header">
         <div class="l-header__container">
 
             <!-- ロゴ -->
@@ -44,29 +44,31 @@
         </div>
     </header>
     <!-- /header -->
-
+    
     <main>
+        <!-- topVisual -->
+        <div class="topVisual">
+            <div class="topVisual__bg-blue"></div>
+            <div class="topVisual__wrapper">
+                <div class="topVisual__title">
+                    <p class="topVisual__title-txt">For the smile</p>
+                    <img src="/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
+                    <p class="topVisual__title-txt mb-50">of our custamers</p>
+                    <img src="/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
+                </div>
+                <p class="topVisual__text">リアルとデジタルの両面から最適な戦略で</p>
+                <p class="topVisual__text">売上最大化を目指します。</p>
+                <p class="topVisual__text">お客様の笑顔のために<br class="sp-on">「成せばなる」をモットーに！</p>
+                <div class="topVisual__real pc-on">
+                    <img src="/img/common/top-kv-real.png" alt="real*digtal">
+                </div>
+                <div class="topVisual__real sp-on">
+                    <img src="/img/common/top-kv-digtal.png" alt="real*digtal">
+                </div>
 
-        <!-- keyvisual -->
-        <div class="keyVisual">
-            <div class="keyVisual__bg-lightblue"></div>
-            <div class="keyVisual__bg-blue"></div>
-            <div class="keyVisual__title">
-                <p class="keyVisual__title-txt keyVisual__title-txt--big">News</p>
-                <img src="/img/common/kv-line.png" alt="underline" class="keyVisual__title-underline">
             </div>
         </div>
-        <!-- /keyvisual -->
-
-        <!-- breadcrumb -->
-        <div class="c-breadcrumb pc-on">
-            <ul class="c-breadcrumb__lists">
-            <li class="c-breadcrumb__list"><a href="#">TOP</a></li>
-            <li class="c-breadcrumb__list">></li>
-            <li class="c-breadcrumb__list"><a href="#">Q&A</a></li>
-            </ul>
-        </div>
-        <!-- /breadcrumb -->
+        <!-- /topVisual -->
 
         <!-- news -->
         <section class="top-news">
@@ -91,9 +93,125 @@
         
         <!-- ECサイトの運営のお悩み解決 -->
         <div class="top-ec">
-            <div class="top-ec__worry">
-                ここにお悩み解決のレイアウトが入る
-            </div>
+            <!-- 背景画+丸のレイアウト配置 -->
+                <div class="top-ec__bg">       
+                    <div class="top-ec__bg--margin"></div>
+                    <div class="top-ec__balloon">売り上げの最大化を目指して</div>
+                    <p class="top-ec__solve">ECサイト運営のお悩みを<br class="sp-on">解決いたします！</p>
+                </div>
+                <!-- ECサイトのお悩みリスト -->
+                <div class="circle__list">
+                    <div class="circle__item">
+                        <div class="circle__wrapper">
+                            <div class="circle__big">
+                                <img src="./img/top/top-ec01.png" alt="img01" class="circle__big__img">
+                            </div>
+                            <div class="circle__little">
+                                <p class="circle__little__text">
+                                    <span class="circle__little__point">Point</span>
+                                    <span class="circle__little__number">01</span>
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="circle__title">通販サイトって？</h3>
+                        <div class="circle__texts">
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>EC事業に詳しい人材がいない<br>
+                                    ため、なかなか進まない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>ECの実務経験者がいない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>社内での人材育成に時間が<br>
+                                    かかる</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle__item">
+                        <div class="circle__wrapper">
+                            <div class="circle__big">
+                                <img src="./img/top/top-ec02.png" alt="top-ec-img02" class="circle__big__img">
+                            </div>
+                            <div class="circle__little">
+                                <p class="circle__little__text">
+                                    <span class="circle__little__point">Point</span>
+                                    <span class="circle__little__number">02</span>
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="circle__title">人手が足りない</h3>
+                        <div class="circle__texts">
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>EC事業、何から始めていいか<br>
+                                    わからない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>強化したいがノウハウがない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>販路拡大のためモール出店した<br>
+                                    いが、どこがいいかわからない</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle__item">
+                        <div class="circle__wrapper">
+                            <div class="circle__big">
+                                <img src="./img/top/top-ec03.png" alt="top-ec-img03" class="circle__big__img">
+                            </div>
+                            <div class="circle__little">
+                                <p class="circle__little__text">
+                                    <span class="circle__little__point">Point</span>
+                                    <span class="circle__little__number">03</span>
+                                </p>
+                            </div>
+                        </div>
+                        <h3 class="circle__title">売り上げが伸びない</h3>
+                        <div class="circle__texts">
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>日々の業務で手一杯で、企画や<br>
+                                    戦略がたてられない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>なかなか売り上げが伸びない</p>
+                            </div>
+                            <div class="circle__text">
+                                <div class="circle__text--check">
+                                    <img src="./img/top/top-ec-check.png" alt="check">
+                                </div>
+                                <p>売り上げアップのための<br>
+                                    リソースが足りていない</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ご相談ください！ -->
             <div class="top-ec__consoulation">
                 <div class="top-ec__consoulation__wrapper">
                     <p class="top-ec__consoulation__text">サイトの<span class="font-light-blue">新規構築</span>から<span class="font-light-blue">売上サポート、<br class="sp-on">販促プロモーション企画など</span><br>
@@ -104,15 +222,81 @@
         </div>
         <!-- /ECサイトの運営のお悩み解決 -->
 
+        <!-- サービス -->
+        <section class="top-service">
+            <!-- 見出し -->
+            <h2 class="c-secTitle">
+                <span>SERVICE</span><br>
+                <span>サービス</span>
+            </h2><!-- /見出し --> 
+
+            
+            <div class="top-service__list">
+                <div class="top-service__item">
+                    <div class="top-service__img">
+                        <img src="./img/top/top-service-img01.png" alt="service01">
+                    </div>
+                    <div class="top-service__texts">
+                        <div class="top-service__texts__wrapper">
+                            <h3 class="top-service__work">ECサイト構築運営代行・SNS運用代行</h3>
+                            <p class="top-service__desc">ECサイトの新規構築はもちろんのこと、SNSを使った<br class="pc-on">集客方法や売上をあげるためのサポート、販促物の<br class="pc-on">効果的な使い方などご相談ください。</p>
+                            <a href="#" class="top-service__link c-btn">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-service__item">
+                    <div class="top-service__img-reverse">
+                        <img src="./img/top/top-service-img02.png" alt="service02">
+                    </div>
+                    <div class="top-service__texts-reverse">
+                        <div class="top-service__texts__wrapper-reverse">
+                            <h3 class="top-service__work-reverse">プロモーション・広告運営</h3>
+                            <p class="top-service__desc-reverse">SNS・インフルエンサーを活用したプロモーションやリサ<br class="pc-on">ーチなども手掛けています。幅広いネットワークを最大限に<br class="pc-on">活かし、リクエストに誠心誠意お応えいたします。</p>
+                            <a href="#" class="top-service__link-reverse c-btn">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-service__item">
+                    <div class="top-service__img">
+                        <img src="./img/top/top-service-img03.png" alt="service03">
+                    </div>
+                    <div class="top-service__texts">
+                        <div class="top-service__texts__wrapper">
+                            <h3 class="top-service__work">イベント企画・運営</h3>
+                            <p class="top-service__desc">小さなイベントから、大きなアリーナクラスのもの<br class="pc-on">まで、会場のお手配はもちろん、企画のご相談から<br class="pc-on">ワンストップでサポートさせていただきます。</p>
+                            <a href="#" class="top-service__link c-btn">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-service__item">
+                    <div class="top-service__img-reverse">
+                        <img src="./img/top/top-service-img04.png" alt="service04">
+                    </div>
+                    <div class="top-service__texts-reverse">
+                        <div class="top-service__texts__wrapper-reverse">
+                            <h3 class="top-service__work-reverse">スポーツ施設企画・運営</h3>
+                            <p class="top-service__desc-reverse">利用者の安全を確保するとともに、より多くのユーザー<br class="pc-on">がスポーツに参画する機会を確保するための適正な<br class="pc-on">管理運営を行なっていくことを目指しています。</p>
+                            <a href="#" class="top-service__link-reverse c-btn">READ MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /サービス -->
+
         <!-- スライダーと実績 -->
         <section class="top-work">
             <p class="top-work__text"> TOKYO2020オリンピックパラリンピック<br>
                 Eスポーツ、謎肉限定販売イベントなど<br class="sp-on">実績はさまざま</p>
             <div class="top-work__slider">
                 <img src="./img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
+                <img src="./img/top/top-slider02.png" alt="slider02" class="top-work__slider__img">
+                <img src="./img/top/top-slider03.png" alt="slider03" class="top-work__slider__img">
+                <img src="./img/top/top-slider04.png" alt="slider04" class="top-work__slider__img">
                 <img src="./img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
-                <img src="./img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
-                <img src="./img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
+                <img src="./img/top/top-slider02.png" alt="slider02" class="top-work__slider__img">
+                <img src="./img/top/top-slider03.png" alt="slider03" class="top-work__slider__img">
+                <img src="./img/top/top-slider04.png" alt="slider04" class="top-work__slider__img">
             </div>
         </section>
         <!-- スライダーと実績 -->

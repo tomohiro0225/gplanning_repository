@@ -101,16 +101,6 @@
 
 // ECサイトのお悩み解決
 .top-ec{
-    &__worry{
-        color: white;
-        font-size: 22px;
-        line-height: 288px;
-        text-align: center;
-        width: 100%;
-        height: 288px;
-        margin: 0 auto 60px;
-        background-color: rgba($color: blue, $alpha: 0.7);
-    }
     &__consoulation{
         max-width: 1200px;
         margin: 0 auto 60px;
@@ -144,22 +134,197 @@
             background-color: #FF981D;    
         }
     }
+
+    // 売り上げの最大化を目指してのBG
+    &__bg{
+        width: 100vw;
+        background-image: url(../img/top/top-ec-bg-pc.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        &--margin{
+            height: 75px;
+        }
+    }   
+        /* 売り上げの最大化を目指して吹き出し */
+        &__balloon{
+            position: relative;
+            padding: 10px 70px;
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 23px;
+            letter-spacing: 0.1em;
+            line-height: 25px;
+            text-align: left;
+            color: #fff;
+            background-color: #FF981D;
+            margin: 0 auto 50px;
+            width: fit-content;
+            border-radius: 25px;
+        }
+        &__balloon:before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -15px;
+            border: 15px solid transparent;
+            border-top: 25px solid #FF981D;
+        }
+        // ECサイト運営のお悩みを解決いたします！
+        &__solve{
+            font-family: "Noto Sans CJK JP";
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: 0.1em;
+            line-height: 25px;
+            text-align: center;
+            color: #fff;
+            margin-top: 5px;
+            padding-bottom: 100px;
+        }
+}
+/* ECサイトのお悩みリスト */
+.circle{         
+    &__list {
+        margin: -50px auto 60px;
+        display: flex;
+        justify-content: center;
+    }
+    &__item:not(:last-child) {
+        margin-right: 100px;
+    }
+    &__wrapper {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    &__big {
+        width: 270px;
+        height: 270px;
+        border-radius: 270px;
+        background-color: #CBE6F4;
+        &__text {
+            font-size: 1rem;
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+    
+        }
+    }
+    &__little {
+        width: 76px;
+        height: 76px;
+        border-radius: 100px;
+        background-color: #FF0000;
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        transform: translate(0%, 0%);
+        &__text{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &__point {
+            font-family: futura-pt, sans-serif;
+            display: block;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21.6px;
+            text-align: center;
+            color: #fff;
+        }
+        &__number{
+            font-family: futura-pt, sans-serif;
+            display: block;
+            font-weight: normal;
+            font-size: 24px;
+            letter-spacing: 0.08em;
+            line-height: 28.8px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &__big__img {
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__title {
+        font-family: "Noto Sans CJK JP";
+        font-weight: bold;
+        font-size: 21px;
+        letter-spacing: 0.08em;
+        line-height: 30px;
+        text-align: center;
+        color: #000;
+        margin-bottom: 25px;
+    }
+    &__texts{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    &__text {
+        display: flex;
+        justify-content: left;
+        align-items: stretch;
+        p{
+            font-family: "Noto Sans CJK JP";
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 0.08em;
+            line-height: 23px;
+            text-align: left;
+            color: #000;
+        }
+    }
+    &__text--check {
+        width: 14px;
+        height: 14px;
+        margin: 5px 5px 0 0;
+    }
+    &__text:not(:last-child){
+        margin-bottom: 10px;
+    }
 }
 // レスポンシブ
 @media screen and (max-width:768px) {
     
     // ECサイトのお悩み解決
     .top-ec{
-        &__worry{
-            color: white;
-            font-size: 22px;
-            line-height: 288px;
-            text-align: center;
-            width: 100%;
-            height: 288px;
-            margin: 0 auto 60px;
-            background-color: rgba($color: blue, $alpha: 0.7);
+
+        
+    // 売り上げの最大化を目指してのBG
+    &__bg{
+        width: 100vw;
+        background-image: url(../img/top/top-ec-bg-sp.png);
+        &--margin{
+            height: 37px;
         }
+    }   
+        /* 売り上げの最大化を目指して吹き出し */
+        &__balloon{
+            padding: 10px 70px;
+            font-size: 15px;
+            color: #fff;
+            background-color: #FF981D;
+            margin: 0 auto 50px;
+        }
+        &__balloon:before {
+            border: 10px solid transparent;
+            border-top: 20px solid #FF981D;
+        }
+        // ECサイト運営のお悩みを解決いたします！
+        &__solve{
+            font-size: 19px;
+            margin-top: 5px;
+            padding-bottom: 28px;
+        }
+
+        // ご相談ください！
         &__consoulation{
             max-width: 1200px;
             margin: 0 auto 60px;
@@ -180,6 +345,34 @@
                 border-radius: 0;
                 text-align: center;
             }
+        }
+    }
+    
+    /* ECサイトのお悩みリスト */
+    .circle{         
+        &__list {
+            margin: 0px auto 60px;
+            display: block;
+            padding: 43px;
+        }
+        &__item{
+            text-align: center;
+        }
+        &__item:not(:last-child) {
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        &__wrapper {
+            position: relative;
+            margin:0 auto 25px;
+            width: 270px;
+        }
+        &__title{
+            margin: 0 auto 25px;
+        }
+        &__texts{
+            margin: 0 auto;
+            text-align: center;
         }
     }
 

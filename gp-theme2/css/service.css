@@ -1,0 +1,504 @@
+@charset "UTF-8";
+.l-service {
+  margin: 0 0 100px 0;
+}
+
+.service-title {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #074466;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 10%;
+  margin-bottom: 70px;
+}
+
+.service-title:before {
+  content: "";
+  flex-grow: 1; /* 余白を分け与える */
+  height: 2px;
+  background: #8DDAFD;
+  width: 150px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.service {
+  padding: 60px 0 150px;
+  background-image: url(../img/common/bg.png);
+  background-size: 95% 100%;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.service__contain, .service__contain-reverse {
+  display: flex;
+  align-items: center;
+}
+.service__contain-reverse {
+  flex-direction: row-reverse;
+}
+.service__contain__img {
+  width: 50%;
+}
+.service__contain__desc {
+  width: 40%;
+  background-color: white;
+  padding: 80px 0px 80px 40px;
+  margin-top: -30px;
+}
+.service__contain__text, .service__contain__text-reverse {
+  font-family: "Noto Sans CJK JP";
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  line-height: 39px;
+  color: #000;
+  margin-right: 40px;
+  text-align: left;
+}
+.service__contain__text {
+  padding-right: 40px;
+  border-right: solid 1px #079BDD;
+}
+.service__contain__text-reverse {
+  padding-left: 40px;
+  border-left: solid 1px #079BDD;
+}
+.service__bg, .service__bg-reverse {
+  background-image: url(../img/service/service-bg.png);
+  background-repeat: no-repeat;
+  width: 70%;
+  height: 220px;
+  margin-top: -180px;
+}
+.service__bg {
+  margin-left: auto;
+}
+.service__bg-reverse {
+  margin-right: auto;
+}
+.service__ec-title {
+  font-family: "Source Han Sans";
+  font-weight: bold;
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  line-height: 39px;
+  text-align: center;
+  color: #1e324f;
+  max-width: 470px;
+  margin: 80px auto 60px;
+  border-bottom: solid 2px #079BDD;
+}
+.service .flow__list {
+  width: 800px;
+  margin: 0 auto;
+}
+.service .flow__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-items: stretch;
+}
+.service .flow__left {
+  width: 15%;
+  margin-right: 20px;
+  background-color: white;
+  height: 150px;
+  box-shadow: 5px 5px 2px #707070;
+  position: relative;
+  white-space: nowrap;
+}
+.service .flow__title {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: left;
+  color: #074466;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service .flow__center {
+  width: 35%;
+  margin-right: 20px;
+}
+.service .flow__right {
+  width: 50%;
+  font-family: "Noto Sans CJK JP";
+  font-weight: normal;
+  font-size: 15px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  color: #000;
+}
+.service .flow__arrow {
+  width: 15%;
+  margin: 0 auto 0 0;
+  position: relative;
+}
+.service .flow__arrow__line {
+  width: 4px;
+  background-color: #29ABE2;
+  height: 75px;
+  margin: 0 auto;
+}
+.service .flow__arrow__delta {
+  width: 10px;
+  height: 10px;
+  border-bottom: solid 4px #29ABE2;
+  border-left: solid 4px #29ABE2;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(-45deg);
+}
+.service__promotion {
+  max-width: 1000px;
+  margin: 130px auto 0;
+  padding: 0 30px;
+}
+.service__promotion__work {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 0.1em;
+  line-height: 39px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 8px;
+}
+.service__promotion__under {
+  max-width: 1000px;
+  height: 10px;
+  margin-bottom: 19px;
+}
+.service__promotion__text {
+  font-family: "Noto Sans CJK JP";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 36px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 50px;
+}
+.service__promotion__list {
+  display: flex;
+  justify-content: center;
+}
+.service__promotion__item--3col {
+  width: 33.3333333333%;
+}
+.service__promotion__item--3col:not(:first-child) {
+  padding-left: 45px;
+  border-left: solid 1px #707070;
+}
+.service__promotion__item--3col:not(:last-child) {
+  margin-right: 45px;
+}
+.service__promotion__item--4col {
+  width: 25%;
+}
+.service__promotion__item--4col:not(:first-child) {
+  padding-left: 20px;
+  border-left: solid 1px #707070;
+}
+.service__promotion__item--4col:not(:last-child) {
+  margin-right: 20px;
+}
+.service__promotion__circle {
+  position: relative;
+  white-space: nowrap;
+  margin: 0 auto 35px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 212px;
+  height: 212px;
+}
+.service__promotion__circle p {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+  line-height: 30px;
+  text-align: left;
+  color: #fff;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.service__promotion__circle--online {
+  background-image: url(../img/service/online.png);
+}
+.service__promotion__circle--offline {
+  background-image: url(../img/service/offline.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 212px;
+  height: 212px;
+}
+.service__promotion__desc {
+  font-family: "Noto Sans CJK JP";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  line-height: 32px;
+  text-align: left;
+  color: #000;
+}
+.service__event {
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+.service__event__title {
+  font-family: "Noto Sans CJK JP";
+  font-weight: bold;
+  font-size: 21px;
+  letter-spacing: 0.1em;
+  line-height: 39px;
+  text-align: left;
+  color: #198af9;
+  margin-bottom: 25px;
+}
+.service__event__title .pc-on {
+  display: inline-block;
+}
+.service__event__text {
+  font-family: "Noto Sans CJK JP";
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 37px;
+  text-align: left;
+  color: #000;
+}
+.service__event:not(:last-child) {
+  margin-bottom: 50px;
+}
+.service__sports {
+  font-family: "Noto Sans CJK JP";
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  line-height: 36px;
+  text-align: left;
+  color: #000;
+  max-width: 1029px;
+  margin: 30px auto 0;
+}
+
+.service-reverse {
+  background-position: left;
+}
+
+@media screen and (max-width: 768px) {
+  .l-service {
+    margin: 0 0 100px 0;
+  }
+  .service-title {
+    font-family: "Noto Sans CJK JP";
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
+  .service-title:before {
+    content: "";
+    flex-grow: 1; /* 余白を分け与える */
+    height: 2px;
+    background: #8DDAFD;
+    width: 60px;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  .service {
+    padding: 40px 0;
+    background-size: 100% 100%;
+  }
+  .service__contain, .service__contain-reverse {
+    display: block;
+    padding: 0 15px;
+  }
+  .service__contain__img {
+    width: auto;
+    padding: 17px;
+    background-color: white;
+  }
+  .service__contain__desc {
+    width: auto;
+    background-color: white;
+    padding: 0px 17px 40px;
+    margin-top: 0px;
+  }
+  .service__contain__text, .service__contain__text-reverse {
+    font-size: 14px;
+    margin-right: 0px;
+    line-height: 22px;
+  }
+  .service__contain__text {
+    padding-right: 30px;
+    border-right: solid 1px #079BDD;
+  }
+  .service__contain__text-reverse {
+    padding-left: 30px;
+    border-left: solid 1px #079BDD;
+  }
+  .service__bg, .service__bg-reverse {
+    display: none;
+  }
+  .service__ec-title {
+    font-size: 18px;
+    line-height: 23px;
+    max-width: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px 11px;
+    border: solid 1px #074466;
+  }
+  .service .flow__wrapper {
+    align-items: center;
+  }
+  .service .flow__list {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .service .flow__left {
+    width: 30%;
+  }
+  .service .flow__title {
+    font-size: 18px;
+  }
+  .service .flow__center {
+    width: 70%;
+    margin-right: 0px;
+  }
+  .service .flow__right {
+    display: none;
+  }
+  .service .flow__arrow {
+    width: 30%;
+  }
+  .service .flow__arrow__line {
+    width: 2px;
+    background-color: #29ABE2;
+    height: 40px;
+    margin: 0 auto;
+  }
+  .service .flow__arrow__delta {
+    width: 8px;
+    height: 8px;
+    border-bottom: solid 2px #29ABE2;
+    border-left: solid 2px #29ABE2;
+  }
+  .service__promotion {
+    margin: 40px auto 0;
+  }
+  .service__promotion__work {
+    font-size: 17px;
+    line-height: 17px;
+    margin-bottom: 0px;
+  }
+  .service__promotion__under {
+    max-width: auto;
+    width: 250px;
+    height: 5px;
+    margin-bottom: 15px;
+  }
+  .service__promotion__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .service__promotion__list {
+    display: block;
+  }
+  .service__promotion__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service__promotion__item--3col {
+    width: auto;
+  }
+  .service__promotion__item--3col:not(:first-child) {
+    padding-left: 0px;
+    border-left: none;
+  }
+  .service__promotion__item--3col:not(:last-child) {
+    margin-right: 0px;
+  }
+  .service__promotion__item--4col {
+    width: auto;
+  }
+  .service__promotion__item--4col:not(:first-child) {
+    padding-left: 0px;
+    border-left: none;
+  }
+  .service__promotion__item--4col:not(:last-child) {
+    margin-right: 0px;
+  }
+  .service__promotion__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .service__promotion__circle {
+    margin: 0 5px 0 0;
+    width: 33%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 110px;
+    height: 110px;
+  }
+  .service__promotion__circle p {
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .service__promotion__desc {
+    width: 66%;
+    background-color: white;
+    padding: 19px;
+    font-size: 12px;
+    line-height: 18px;
+    border: solid 1px #707070;
+  }
+  .service__event {
+    padding: 0 30px;
+  }
+  .service__event__title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .service__event__title .pc-on {
+    display: none;
+  }
+  .service__event__text {
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .service__event:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .service__sports {
+    padding: 0 29px;
+    font-size: 13px;
+    line-height: 25px;
+  }
+}
+/*# sourceMappingURL=service.css.map */
