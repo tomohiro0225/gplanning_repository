@@ -83,9 +83,13 @@
 
     &__link,
     &__link-reverse{
-        margin:0 0 0 auto;
         color: #fff;
         border: solid 1px #fff;
+    }
+    &__link:hover,
+    &__link-reverse:hover{
+        color: #079BDD;
+        background-color: #fff;
     }
     &__link{
         margin:0 0 0 auto;

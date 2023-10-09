@@ -39,7 +39,12 @@
     text-align: center;
     width: fit-content;
     margin: 0 auto;  
-}
+    transition: all 0.5s;
+  }
+  .c-btn:hover{
+      color: white;
+      background-color: #074466;
+  }
 
 @media screen and (max-width:768px) {
     .c-secTitle {

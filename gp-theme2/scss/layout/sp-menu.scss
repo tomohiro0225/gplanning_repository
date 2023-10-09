@@ -1,0 +1,90 @@
+.sp-menu {
+    display: none;
+}
+.sp-menu.clicked{
+    display: block;
+}
+
+
+@media screen and (max-width:768px) {
+    .sp-menu {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        background-color: white;
+        background-image: url(../img/common/bg-sp-menu.png);
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        background-position: center right;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 23px 0 23px;
+            height: 60px;
+        }
+        &__gp {
+            width: 91px;
+            height: 29px;
+        }
+        &__line {
+            width: 28px;
+            height: 28px;
+            position: relative;
+            &--1,
+            &--2{
+                position: absolute;
+                display: block;
+                width: 28px;
+                height: 2px;
+                background-color: #074466;
+            }
+            &--1{
+                top: 50%;
+                left: 50%;
+                transform: translate(-50% , -50%) rotate(45deg);
+            }
+            &--2{
+                bottom: 50%;
+                right: 50%;
+                transform: translate(50% , 50%) rotate(135deg);
+            }
+        }
+        &__list {
+            width: calc(100% - 96px);
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+        }
+        &__solo {
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0.1em;
+            text-align: left;
+            
+            a{
+                display: block;
+                padding: 20px 8px;
+                color: #074466;
+                white-space: nowrap;
+            }
+        }
+        &__solo:not(:last-child){
+            border-bottom: solid 1px #707070;
+        }
+        &__insta {
+            width: 28px;
+            height: 28px;
+            img{
+                margin: 30px 0 0 8px;
+            }
+        }
+    }
+}

@@ -39,6 +39,7 @@
 .top-news__table dt + dd {
   width: 70%;
   font-weight: 500;
+  white-space: wrap;
 }
 .top-news__label {
   font-family: Futura;

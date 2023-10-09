@@ -75,9 +75,12 @@
   margin: 0 auto 45px 0;
 }
 .top-service__link, .top-service__link-reverse {
-  margin: 0 0 0 auto;
   color: #fff;
   border: solid 1px #fff;
+}
+.top-service__link:hover, .top-service__link-reverse:hover {
+  color: #8DDAFD;
+  background-color: #fff;
 }
 .top-service__link {
   margin: 0 0 0 auto;
