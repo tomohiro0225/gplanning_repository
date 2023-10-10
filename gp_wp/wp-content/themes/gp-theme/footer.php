@@ -1,5 +1,5 @@
-    <!-- footer -->
-    <footer class="l-footer">
+
+<footer class="l-footer">
         <!-- footer-menu -->
         <nav class="l-footer__nav">
             <ul class="l-footer__list">
@@ -14,19 +14,19 @@
                     <p class="l-footer__tel">０９０－９４２１－６９７９</p>
                 </li>
                 <li class="l-footer__item">
-                    <p class="l-footer__title"><a href=""><span class="l-footer__title--delta">▶</span>事業内容</p></a>
+                    <p class="l-footer__title"><a href="<?php the_permalink(12); ?>"><span class="l-footer__title--delta">▶</span>事業内容</p></a>
                     <p class="l-footer__text">ECサイト構築運用代行・SNS運用代行<br>
                         イベント企画・運営<br>
                         スポーツ施設企画・運営<br>
                         広告運用　</p>
                 </li>
                 <li class="l-footer__item">
-                    <p class="l-footer__title"><a href=""><span class="l-footer__title--delta">▶</span>会社概要</a></p>
+                    <p class="l-footer__title"><a href="<?php the_permalink(22); ?>"><span class="l-footer__title--delta">▶</span>会社概要</a></p>
                     <p class="l-footer__text">企業情報・代表挨拶・アクセス</p>
-                    <p class="l-footer__title"><a href=""><span class="l-footer__title--delta">▶</span>お知らせ</a></p>
-                    <p class="l-footer__title"><a href=""><span class="l-footer__title--delta">▶</span>よくある質問</a></p>
-                    <p class="l-footer__title"><a href="<?php echo get_template_directory_uri(); ?>/contact.html"><span class="l-footer__title--delta">▶</span>お問合せ</a></p>
-                    <p class="l-footer__title"><a href="<?php echo get_template_directory_uri(); ?>/privacy.html"><span class="l-footer__title--delta">▶</span>プライバシーポリシー</a></p>
+                    <p class="l-footer__title"><a href="<?php echo get_post_type_archive_link("news"); ?>"><span class="l-footer__title--delta">▶</span>お知らせ</a></p>
+                    <p class="l-footer__title"><a href="<?php the_permalink(20); ?>"><span class="l-footer__title--delta">▶</span>よくある質問</a></p>
+                    <p class="l-footer__title"><a href="<?php the_permalink(8); ?>"><span class="l-footer__title--delta">▶</span>お問合せ</a></p>
+                    <p class="l-footer__title"><a href="<?php the_permalink(5); ?>"><span class="l-footer__title--delta">▶</span>プライバシーポリシー</a></p>
                 </li>
                 <li class="l-footer__item">
                     <figure class="l-footer__logo">
@@ -40,4 +40,3 @@
         <!-- /footer-menu -->
         <p class="l-footer__copyright">©G PLANNING inc.</p>
     </footer>
-    <!-- /footer -->

@@ -37,15 +37,33 @@ li{
     display: none;
 }
 
-// 背景色
-
-
-//ぱんくず
-/* 共通 ------------------------------*/
-*[class*="cp-"],
-*[class*="cp-"] * {
-    box-sizing: border-box;
+// フェードイン
+[data-fadein]{
+    opacity: 0;
+    transition: all 0.6s;
+    transform: translateY(150px);
 }
+[data-fadein].is-over{
+    opacity: 1;
+    transform: translateY(0px);
+}
+// 左からin
+[data-leftin]{
+    transition: all 0.6s;
+    transform: translateX(-1000px);
+}
+[data-leftin].is-over{
+    transform: translateX(0px);
+}
+// 右からin
+[data-rightin]{
+    transition: all 0.6s;
+    transform: translateX(1000px);
+}
+[data-rightin].is-over{
+    transform: translateX(0px);
+}
+
 
 //breadcrumb
 .c-breadcrumb{

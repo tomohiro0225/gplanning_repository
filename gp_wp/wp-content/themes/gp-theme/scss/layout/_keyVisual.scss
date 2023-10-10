@@ -12,7 +12,7 @@
     }
     &__bg-blue{
             background-color: #198AF9;
-            width: 60%;
+            width: 70%;
             height: 100%;
             position: absolute;
             top: 50%;
@@ -41,7 +41,7 @@
         top: 40%;
         left: 45%;
         transform: translate(-50%, -50%) rotate(-10deg);
-        &--contact{
+        &--big{
             font-size: 120px;
         }
     }
@@ -58,7 +58,8 @@
 
 @media screen and (max-width:768px) {
     .keyVisual {
-        height: 240px;    
+        height: 240px; 
+        margin-bottom: 40px;   
         &__title {    
             left: 25%;
         }

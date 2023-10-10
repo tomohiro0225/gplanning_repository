@@ -3,7 +3,7 @@
         <!-- breadcrumb -->
         <div class="c-breadcrumb pc-on">
             <ul class="c-breadcrumb__lists">
-            <li class="c-breadcrumb__list"><a href="#">TOP</a></li>
+            <li class="c-breadcrumb__list"><a href="<?php echo home_url(); ?>">TOP</a></li>
             <li class="c-breadcrumb__list">></li>
             <li class="c-breadcrumb__list"><a href="#">404 not found</a></li>
             </ul>

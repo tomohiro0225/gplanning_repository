@@ -1,33 +1,114 @@
 <?php get_header(); ?>
 
+
+        <!-- keyvisual -->
+        <div class="keyVisual">
+            <div class="keyVisual__bg-lightblue"></div>
+            <div class="keyVisual__bg-blue"></div>
+            <div class="keyVisual__title">
+                <p class="keyVisual__title-txt keyVisual__title-txt--big">Question</p>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="keyVisual__title-underline">
+            </div>
+        </div>
+        <!-- /keyvisual -->
+
         <!-- breadcrumb -->
         <div class="c-breadcrumb pc-on">
             <ul class="c-breadcrumb__lists">
-            <li class="c-breadcrumb__list"><a href="#">TOP</a></li>
+            <li class="c-breadcrumb__list"><a href="<?php echo home_url(); ?>">TOP</a></li>
             <li class="c-breadcrumb__list">></li>
-            <li class="c-breadcrumb__list"><a href="#">PRAIVACY POLICY</a></li>
+            <li class="c-breadcrumb__list"><a href="#">Q&A</a></li>
             </ul>
         </div>
         <!-- /breadcrumb -->
 
-        <!-- privacy -->
-        <section class="privacy">
+        <!-- faq -->
+        <section class="faq">
             <!-- 見出し -->
             <h2 class="c-secTitle">
-                <span>faq</span><br>
+                <span>Q&A</span><br>
                 <span>よくある質問</span>
             </h2><!-- /見出し -->
 
-            <p class="privacy__text">株式会社G planning（以下、「当社」という。）は、当社の事業の用に供するすべての個人情報を適切に取扱うため、当社全従業者が遵守すべき行動基準として本個人情報保護方針を定め、その遵守の徹底を図ることといたします。</p>
-            <p class="privacy__text">□ 当社は、事業の内容及び規模を考慮した適切な個人情報の取得、利用及び提供を行います。それには特定された利用目的の達成に必要な範囲を超えた個人情報の取扱いを行わないこと及びそのための措置を講じることを含みます。</p>
-            <p class="privacy__text">□ 当社は、個人情報の取扱いの全部又は一部を委託する場合は、その取扱いを委託された個人情報の安全管理が図られるよう、委託を受けた者に対する必要かつ適切な監督を行います。</p>
-            <p class="privacy__text">□ 当社は、本人の同意がある場合又は法令に基づく場合を除き、個人情報を第三者に提供することはありません。</p>
-            <p class="privacy__text">□ 当社は、個人情報の漏えい、滅失又はき損の防止及び是正のための措置を講じます。</p>
+            <!-- 質問リスト -->
+            <ul class="faq__list">
 
-            <p class="privacy__ceo">株式会社 G planning<br>
-                代表取締役　石谷元記</p>
+                <li class="faq__item">
+                    <div class="faq__question">
+                        <div class="faq__question__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/question.png" alt="question">
+                        </div>
+                        <h3 class="faq__question__title">全くの素人です。ECサイトの制作に必要なものを教えてもらえますか？</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <div class="faq__answer__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/answer.png" alt="answer">
+                        </div>
+                        <p class="faq__answer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                
+                <li class="faq__item">
+                    <div class="faq__question">
+                        <div class="faq__question__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/question.png" alt="question">
+                        </div>
+                        <h3 class="faq__question__title">テキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <div class="faq__answer__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/answer.png" alt="answer">
+                        </div>
+                        <p class="faq__answer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__question">
+                        <div class="faq__question__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/question.png" alt="question">
+                        </div>
+                        <h3 class="faq__question__title">テキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <div class="faq__answer__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/answer.png" alt="answer">
+                        </div>
+                        <p class="faq__answer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__question">
+                        <div class="faq__question__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/question.png" alt="question">
+                        </div>
+                        <h3 class="faq__question__title">テキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <div class="faq__answer__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/answer.png" alt="answer">
+                        </div>
+                        <p class="faq__answer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <div class="faq__question">
+                        <div class="faq__question__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/question.png" alt="question">
+                        </div>
+                        <h3 class="faq__question__title">テキストテキストテキストテキストテキストテキストテキスト</h3>
+                    </div>
+                    <div class="faq__answer">
+                        <div class="faq__answer__icon">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/q&a/answer.png" alt="answer">
+                        </div>
+                        <p class="faq__answer__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                    </div>
+                </li>
+
+            </ul>
+            <!-- 質問リスト -->
         </section>
-        <!-- /privacy -->
+        <!-- /faq -->
 
         <?php get_template_part('inc/l-contact'); ?>
 
@@ -37,6 +118,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
 </body>
 </html>

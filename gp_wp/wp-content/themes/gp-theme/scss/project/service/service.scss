@@ -1,0 +1,567 @@
+.l-service {
+    margin: 0 0 100px 0;
+}
+.service-title {
+    font-family: "Noto Sans CJK JP";
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #074466;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    margin-left: 10%;
+    margin-bottom: 70px;
+}
+.service-title:before{
+    content: '';
+    flex-grow: 1;/* 余白を分け与える */
+    height: 2px;
+    background: #8DDAFD;
+    width: 150px;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+// service
+.service {
+    padding: 60px 0 150px;
+    background-image: url(../img/common/bg.png);
+    background-size: 95% 100%;
+    background-position: right ;
+    background-repeat: no-repeat;
+    
+    // ブロックレイアウト
+    &__contain,
+    &__contain-reverse {
+        display: flex;
+        align-items: center;
+    }
+    &__contain-reverse {
+        flex-direction: row-reverse;
+    }
+    &__contain{  
+        &__img {
+            width: 50%;
+        }
+        &__desc {
+            width: 40%;
+            background-color: white;
+            padding: 80px 0px 80px 40px;
+            margin-top: -30px;
+        }
+        &__text, 
+        &__text-reverse {
+            font-family: "Noto Sans CJK JP";
+            font-weight: 500;
+            font-size: 22px;
+            letter-spacing: 0.1em;
+            line-height: 39px;
+            color: #000;
+            margin-right: 40px;
+            text-align: left;
+        }
+        &__text {
+            padding-right: 40px;
+            border-right: solid 1px #079BDD;
+        }
+        &__text-reverse {
+            padding-left: 40px;
+            border-left: solid 1px #079BDD;
+        }
+    }
+    &__bg,
+    &__bg-reverse {
+        background-image: url(../img/service/service-bg.png);
+        background-repeat: no-repeat;
+        width: 70%;
+        height: 220px;
+        margin-top: -180px;
+    }
+    &__bg {
+        margin-left: auto;
+    }
+    &__bg-reverse {
+        margin-right: auto;
+    }
+
+    
+        // ECサイト構築運営代行
+        &__ec-title{
+            font-family: "Source Han Sans";
+            font-weight: bold;
+            font-size: 26px;
+            letter-spacing: 0.1em;
+            line-height: 39px;
+            text-align: center;
+            color: #1e324f;
+            max-width: 470px;
+            margin: 80px auto 60px;
+            border-bottom: solid 2px #079BDD;
+        }
+
+        // ECサイト構築運営代行フロー
+        .flow {
+            &__list {
+                width: 800px;
+                margin:0 auto;
+            }
+            &__item {
+
+            }
+            &__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                align-items: stretch;
+            }
+            &__left {
+                width: 15%;
+                margin-right: 20px;
+                background-color: white;
+                height: 150px;
+                box-shadow: 5px 5px 2px #707070;
+                position: relative;
+                white-space: nowrap;
+            }
+            &__title{
+                font-family: "Noto Sans CJK JP";
+                font-weight: bold;
+                font-size: 21px;
+                line-height: 30px;
+                text-align: left;
+                color: #074466;
+                -ms-writing-mode: tb-rl;
+                writing-mode: vertical-rl;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &__center {
+                width: 35%;
+                margin-right: 20px;
+            }
+            &__right {
+                width: 50%;
+                font-family: "Noto Sans CJK JP";
+                font-weight: normal;
+                font-size: 15px;
+                letter-spacing: 0.1em;
+                line-height: 30px;
+                text-align: left;
+                color: #000;
+                
+            }
+            &__arrow {
+                width: 15%;
+                margin: 0 auto 0 0;
+                position: relative;
+                &__line{
+                    width: 4px;
+                    background-color: #29ABE2;
+                    height: 75px;
+                    margin: 0 auto;
+                }
+                &__delta{
+                    width: 10px;
+                    height: 10px;
+                    border-bottom: solid 4px #29ABE2;
+                    border-left: solid 4px #29ABE2;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(-45deg);
+                }
+            }
+        }
+
+        // プロモーション・広告運用
+        &__promotion {
+            max-width: 1000px;  
+            margin: 130px auto 0;
+            padding: 0 30px;
+            &__work {
+                font-family: "Noto Sans CJK JP";
+                font-weight: bold;
+                font-size: 28px;
+                letter-spacing: 0.1em;
+                line-height: 39px;
+                text-align: left;
+                color: #000;
+                margin-bottom: 8px;
+            }
+            
+            &__under {
+                max-width: 1000px;
+                height: 10px;
+                margin-bottom: 19px;
+            }
+            
+            &__text {
+                font-family: "Noto Sans CJK JP";
+                font-weight: 500;
+                font-size: 20px;
+                letter-spacing: 0.1em;
+                line-height: 36px;
+                text-align: left;
+                color: #000;
+                margin-bottom: 50px;
+            }
+            
+            // リスト
+            &__list{
+                display: flex;
+                justify-content: center;
+            }
+            &__item{
+                &--3col {
+                    width: calc(100% / 3);
+                }
+                &--3col:not(:first-child) {
+                    padding-left: 45px;
+                    border-left: solid 1px #707070;
+                }
+                &--3col:not(:last-child) {
+                    margin-right: 45px;
+                }
+                &--4col {
+                    width: calc(100% / 4);
+                }
+                &--4col:not(:first-child) {
+                    padding-left: 20px;
+                    border-left: solid 1px #707070;
+                }
+                &--4col:not(:last-child) {
+                    margin-right: 20px;
+                }
+            }
+            &__circle {
+                // テキスト関連
+                position: relative;
+                white-space: nowrap;
+                margin: 0 auto 35px;
+                // 背景関連
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                width: 212px;
+                height: 212px;
+                p{
+                    font-family: "Noto Sans CJK JP";
+                    font-weight: bold;
+                    font-size: 22px;
+                    letter-spacing: 0.1em;
+                    line-height: 30px;
+                    text-align: left;
+                    color: #fff;
+                    text-align: left;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &--online {             
+                    background-image: url(../img/service/online.png);
+                }
+                &--offline {             
+                    background-image: url(../img/service/offline.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center center;
+                    width: 212px;
+                    height: 212px;
+                }
+            }
+            &__desc {
+                font-family: "Noto Sans CJK JP";
+                font-weight: normal;
+                font-size: 18px;
+                letter-spacing: 0.08em;
+                line-height: 32px;
+                text-align: left;
+                color: #000;
+
+            }
+        }
+        
+        
+    
+        // イベント企画・運営
+        &__event{
+            max-width: 1000px;
+            margin: 30px auto 0;
+            &__title {
+                font-family: "Noto Sans CJK JP";
+                font-weight: bold;
+                font-size: 21px;
+                letter-spacing: 0.1em;
+                line-height: 39px;
+                text-align: left;
+                color: #198af9;
+                margin-bottom: 25px; 
+                .pc-on{
+                    display: inline-block;
+                }                  
+            }
+            &__text {
+                font-family: "Noto Sans CJK JP";
+                font-weight: normal;
+                font-size: 18px;
+                letter-spacing: 0.1em;
+                line-height: 37px;
+                text-align: left;
+                color: #000;                
+            }
+        }
+        &__event:not(:last-child){
+            margin-bottom: 50px;
+        }
+
+    // スポーツ企画・運営
+    &__sports{
+        font-family: "Noto Sans CJK JP";
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        line-height: 36px;
+        text-align: left;
+        color: #000;
+        max-width: 1029px;
+        margin: 30px auto 0;
+    }
+}
+.service-reverse{
+    background-position: left;
+}
+
+
+// レスポンシブ
+@media screen and (max-width:768px) {
+    .l-service {
+        margin: 0 0 100px 0;
+    }
+    .service-title {
+        font-family: "Noto Sans CJK JP";
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+    .service-title:before{
+        content: '';
+        flex-grow: 1;/* 余白を分け与える */
+        height: 2px;
+        background: #8DDAFD;
+        width: 60px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    
+    // service
+    .service {
+        padding: 40px 0;
+        background-size: 100% 100%;
+
+        
+        // ブロックレイアウト
+        &__contain,
+        &__contain-reverse {
+            display: block;
+            padding: 0 15px;
+        }
+        &__contain{  
+            &__img {
+                width: auto;
+                padding: 17px;
+                background-color: white;
+            }
+            &__desc {
+                width: auto;
+                background-color: white;
+                padding: 0px 17px 40px;
+                margin-top: 0px;
+            }
+            &__text, 
+            &__text-reverse {
+                font-size: 14px;
+                margin-right: 0px;
+                line-height: 22px;
+            }
+            &__text {
+                padding-right: 30px;
+                border-right: solid 1px #079BDD;
+            }
+            &__text-reverse {
+                padding-left: 30px;
+                border-left: solid 1px #079BDD;
+            }
+        }
+        &__bg,
+        &__bg-reverse {
+            display: none;
+        }
+    
+        // ECサイト構築運営代行
+        &__ec-title{
+            font-size: 18px;
+            line-height: 23px;
+            max-width: auto;
+            width: fit-content;
+            padding: 5px 11px;
+            border: solid 1px #074466;
+        }
+        
+        // ECサイト構築運営代行フロー図
+        .flow {
+            &__wrapper{
+                align-items: center;
+            }
+            &__list {
+                width: auto;
+                margin:0 auto;
+                padding: 0 20px;
+            }
+            &__left {
+                width: 30%;
+            }
+            &__title{
+                font-size: 18px;
+            }
+            &__center {
+                width: 70%;
+                margin-right: 0px;
+            }
+            &__right {
+                display: none;
+            }
+            &__arrow {
+                width: 30%;
+                &__line{
+                    width: 2px;
+                    background-color: #29ABE2;
+                    height: 40px;
+                    margin: 0 auto;
+                }
+                &__delta{
+                    width: 8px;
+                    height: 8px;
+                    border-bottom: solid 2px #29ABE2;
+                    border-left: solid 2px #29ABE2;
+                }
+            }
+        }
+
+        // プロモーション・広告運用
+        &__promotion {
+            margin: 40px auto 0;
+            &__work {
+                font-size: 17px;
+                line-height: 17px;
+                margin-bottom: 0px;
+            }
+            
+            &__under {
+                max-width: auto;
+                width: 250px;
+                height: 5px;
+                margin-bottom: 15px;
+            }
+            
+            &__text {
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+
+            
+            
+            // リスト
+            &__list{
+                display: block;
+            }
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                &--3col {
+                    width: auto;
+                }
+                &--3col:not(:first-child) {
+                    padding-left: 0px;
+                    border-left: none;
+                }
+                &--3col:not(:last-child) {
+                    margin-right: 0px;
+                }
+                &--4col {
+                    width: auto;
+                }
+                &--4col:not(:first-child) {
+                    padding-left: 0px;
+                    border-left: none;
+                }
+                &--4col:not(:last-child) {
+                    margin-right: 0px;
+                }
+            }
+            &__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            &__circle {
+                margin: 0 5px 0 0;
+                width: 33%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center center;
+                width: 110px;
+                height: 110px;
+                p{
+                    font-size: 11px;
+                    line-height: 13px;
+                }
+            }
+            &__desc{
+                width: 66%;
+                background-color: white;
+                padding: 19px;
+                font-size: 12px;
+                line-height: 18px;
+                border: solid 1px #707070;
+            }
+        }
+        
+
+        // イベント企画・運営
+        &__event{
+            padding: 0 30px;
+            &__title {
+                font-size: 15px;
+                line-height: 22px;   
+                .pc-on{
+                    display: none;
+                } 
+            }
+            &__text {
+                font-size: 13px;
+                line-height: 25px;             
+            }
+        }
+        &__event:not(:last-child){
+            margin-bottom: 25px;
+        }
+        
+        // スポーツ企画・運営
+        &__sports{
+            padding: 0 29px;
+            font-size: 13px;
+            line-height: 25px;
+        }
+    }
+}
+
+
+
+
