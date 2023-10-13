@@ -1,0 +1,101 @@
+//全体を整える
+html{
+    font-size: 10px;
+    color: #333;
+    overflow-x: hidden;
+}
+.cl-green{
+    color: #0088a2;
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+//margin調整
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+//pc/sp表示
+.pc-on{
+    display: block;
+}
+.sp-on{
+    display: none;
+}
+
+// フェードイン
+[data-fadein]{
+    opacity: 0;
+    transition: all 0.6s;
+    transform: translateY(150px);
+}
+[data-fadein].is-over{
+    opacity: 1;
+    transform: translateY(0px);
+}
+// 左からin
+[data-leftin]{
+    transition: all 0.6s;
+    transform: translateX(-1000px);
+}
+[data-leftin].is-over{
+    transform: translateX(0px);
+}
+// 右からin
+[data-rightin]{
+    transition: all 0.6s;
+    transform: translateX(1000px);
+}
+[data-rightin].is-over{
+    transform: translateX(0px);
+}
+
+
+//breadcrumb
+.c-breadcrumb{
+    margin-top: 12px;
+    &__lists {
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    &__list {
+        font-family:  yu-gothic-pr6n, sans-serif;
+        margin-right: 18px;
+        font-size: 13px;
+        color: #074466;
+        line-height: 18px;
+        a{
+            font-family:  yu-gothic-pr6n, sans-serif;
+            color: #074466;
+        }
+    }
+    
+    
+}
+
+
+@media screen and (max-width:768px) {
+    .pc-on{
+        display: none;
+    }
+    .sp-on{
+        display: block;
+    }
+}

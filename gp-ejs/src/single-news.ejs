@@ -1,0 +1,54 @@
+<%# _head.ejs %>
+<%- include('./_include/_head') %>
+<%# _header.ejs %>
+<%- include('./_include/_header') %>
+
+
+        <!-- keyvisual -->
+        <div class="keyVisual">
+            <div class="keyVisual__bg-lightblue"></div>
+            <div class="keyVisual__bg-blue"></div>
+            <div class="keyVisual__title">
+                <p class="keyVisual__title-txt keyVisual__title-txt--big">News</p>
+                <img src="./img/common/kv-line.png" alt="underline" class="keyVisual__title-underline">
+            </div>
+        </div>
+        <!-- /keyvisual -->
+
+        <!-- breadcrumb -->
+        <div class="c-breadcrumb pc-on">
+            <ul class="c-breadcrumb__lists">
+            <li class="c-breadcrumb__list"><a href="#">TOP</a></li>
+            <li class="c-breadcrumb__list">></li>
+            <li class="c-breadcrumb__list"><a href="#">Q&A</a></li>
+            </ul>
+        </div>
+        <!-- /breadcrumb -->
+
+        <!-- news -->
+        <section class="single-news">
+                <div class="single-news__inner">
+                    <p class="single-news__date">2023/09/30</p>
+                    <h2 class="single-news__title">ホームページがリニューアルされました</h2>
+                    <div class="single-news__content">この度、株式会社Gplanningのホームページ<br>
+                        をリニューアルいたしました。<br>
+                        事業内容や活動など、ご興味がある方はお気軽<br>
+                        にお問合せください。</div>
+                </div>
+        </section>
+        <!-- /news -->        
+
+        
+<%# _l-contact.ejs %>
+<%- include('./_include/_l-contact') %>
+
+    
+<%# _footer.ejs %>
+<%- include('./_include/_footer') %>
+
+
+    <!-- javascript関連 -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

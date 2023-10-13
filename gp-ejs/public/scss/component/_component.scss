@@ -1,0 +1,70 @@
+// conponent/* 見出し ------------------------------*/
+.c-secTitle {
+    position: relative;
+    color: #074466;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0;
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        width: 50px;
+        margin: 0 auto;
+        background: #074466;
+    }
+    & span:first-child {
+        display: inline-block;
+        margin-bottom: 15px;
+        font-size: 32px;
+    }
+    & span {
+        display: inline-block;
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+// topページのボタン
+.c-btn{
+    display: block;
+    font-family: Futura;
+    font-weight: bold;
+    font-size: 18px;
+    color: #074466;
+    padding: 20px 90px;
+    border: solid 1px #074466;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;  
+    transition: all 0.5s;
+  }
+  .c-btn:hover{
+      color: white;
+      background-color: #074466;
+  }
+
+@media screen and (max-width:768px) {
+    .c-secTitle {
+        margin: 40px 0;
+        &::after {
+            width: 40px;
+        }
+        & span:first-child {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+        & span {
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+    }
+    // topページのボタン
+    .c-btn{
+        font-size: 12px;
+        padding: 10px 48px;
+    }
+}

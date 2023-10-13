@@ -1,0 +1,101 @@
+.keyVisual {
+    height: 340px;    
+    margin-bottom: 15px;
+    background-image: url(../img/common/kv.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    &__bg-lightblue{
+        background-color: #3FA9F5;
+        height: 100%;
+        opacity: 0.5;
+    }
+    &__bg-blue{
+            background-color: #198AF9;
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(-50%, -50%) skewX(-30deg);
+    }
+    &__title {    
+        text-align: left;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+    &__title-txt {
+        font-family: Shelby;
+        font-weight: normal;
+        font-size: 90px;
+        letter-spacing: 0.14em;
+        text-align: center;
+        color: #fff;
+        width: 100%;
+        z-index: 50;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-50%, -50%) rotate(-10deg);
+        &--big{
+            font-size: 120px;
+        }
+    }
+    &__title-underline {
+        width: 440px;
+        z-index: 100;
+        position: absolute;
+        top: 54%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .keyVisual {
+        height: 240px; 
+        margin-bottom: 40px;   
+        &__title {    
+            left: 25%;
+        }
+        &__bg-blue{
+            left: 15%;
+        }
+        &__title-txt {
+            font-size: 50px;
+            top: 45%;
+            left: 50%;
+            &--contact{
+                font-size: 80px;
+            }
+        }
+        &__title-underline {
+            width: 240px;
+            top: 57%;
+            left: 48%;
+        }
+    }
+}
+
+@media screen and (max-width:499px) {
+    .keyVisual {
+        height: 140px;  
+        &__title {    
+            left: 25%;
+        }
+        &__title-txt {
+            font-size: 31px;
+            &--contact{
+                font-size: 40px;
+            }
+        }
+        &__title-underline {
+            width: 140px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    font-size: 16px;
+}
+
+.common:not(:first-child){
+    margin-top: 140px;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    color: #fff;
+    padding: 20px 100px;
+    background-color: blueviolet;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.contain {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contain__list {
+    width: calc(100% / 3 - 40px / 3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+/*==================================================
+スタート時は要素自体を透過0にするためのopacity:0;を指定する
+===================================*/
+
+.contain__list{
+	opacity: 0;
+}
+
+/*==================================================
+動かしたい動き（今回は” ふわっ” を採用）
+===================================*/
+.fadeUp {
+animation-name:fadeUpAnime;
+animation-duration:0.5s;
+animation-fill-mode:forwards;
+opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+
+.contain__list:nth-child(3n) {
+    margin-right: 00px;
+}
+.contain__bg {
+    background-color: brown;
+    width: 100%;
+    height: 200px;
+}
+.contain__name {
+    font-size: 1.5rem;
+    text-align: center;
+}
+.contain__text {
+    font-size: 1.1rem;
+
+}
+
+
+

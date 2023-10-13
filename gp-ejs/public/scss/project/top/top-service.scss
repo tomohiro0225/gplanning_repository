@@ -1,0 +1,192 @@
+.top-service{
+    margin-bottom: 60px;
+    &__list {
+        background-image: url(../img/top/top-service-bg.png);
+        background-size: contain;
+        padding: 50px 0;
+    }
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../img/top/top-service-bg2.png);
+        background-size: 80% 80%;
+        background-position: right center;
+        background-repeat: no-repeat;
+    }
+    &__item:nth-child(2n){
+        flex-direction: row-reverse;
+        background-position: left center;
+    }
+
+    &__img,
+    &__img-reverse {
+        width: 50%;
+    }
+
+    &__texts {
+        width: 50%;
+        &__wrapper,
+        &__wrapper-reverse{
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__wrapper{
+            text-align: right;
+            margin-right: 5%;
+        }
+        &__wrapper-reverse{
+            text-align: left;
+            margin-left: 5%;
+        }
+    }
+    &__texts-reverse{
+        width: 50%;
+    }
+
+    &__work,
+    &__work-reverse {
+        font-family: "Noto Sans CJK JP";
+        font-weight: bold;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        line-height: 46px;
+        color: #fff;
+        margin-bottom: 45px;
+    }
+    &__work {
+        text-align: right;
+    }
+    &__work-reverse {
+        text-align: left;
+    }
+
+    &__desc, 
+    &__desc-reverse {
+        font-family: "Noto Sans CJK JP";
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+        color: #fff;
+        text-align: left;
+        width: fit-content;
+    }
+    &__desc {
+        text-align: left;
+        margin: 0 0 45px auto;
+    }
+    &__desc-reverse {
+        margin: 0 auto 45px 0;
+    }
+
+    &__link,
+    &__link-reverse{
+        color: #fff;
+        border: solid 1px #fff;
+    }
+    &__link:hover,
+    &__link-reverse:hover{
+        color: #079BDD;
+        background-color: #fff;
+    }
+    &__link{
+        margin:0 0 0 auto;
+    }
+    &__link-reverse{
+        margin:0 auto 0 0;
+    }
+}
+
+// レスポンシブ
+@media screen and (max-width:768px) {
+    .top-service{
+        margin-bottom: 40px;
+        &__list {
+            padding: 0px 0px 30px 0px;
+        }
+    
+        &__item {
+            flex-direction: column-reverse;
+            background-size: 90% 70%;
+            background-position: left top;
+        }
+        &__item:nth-child(2n){
+            margin: 0 0 0 auto;
+            flex-direction: column-reverse;
+            background-position: right top;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 40px;
+        }
+    
+        &__img,
+        &__img-reverse {
+            width: 90%;
+        }
+        &__img-reverse {
+            margin-left: auto;
+        }
+    
+        &__texts {
+            width: 90%;
+            &__wrapper,
+            &__wrapper-reverse{
+                position: static;
+                transform: translateY(0%);
+            }
+            &__wrapper{
+                text-align: left;
+                margin-left: 23px;
+            }
+            &__wrapper-reverse{
+                text-align: right;
+                margin-right: 23px;
+            }
+        }
+        &__texts-reverse{
+            width: 90%;
+            margin-left: auto;
+        }
+    
+        &__work,
+        &__work-reverse {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__work {
+            text-align: left;
+        }
+        &__work-reverse {
+            text-align: right;
+        }
+    
+        &__desc, 
+        &__desc-reverse {
+            font-size: 13px;
+            line-height: 23px;
+            text-align: left;
+        }
+        &__desc {
+            text-align: left;
+            margin: 0 auto 15px 0;
+        }
+        &__desc-reverse {
+            margin: 0 0 15px auto;
+        }
+    
+        &__link,
+        &__link-reverse{
+            color: #fff;
+            border: solid 1px #fff;
+        }
+        &__link{
+            margin:0 auto 25px 0;
+        }
+        &__link-reverse{
+            margin:0 0 25px auto;
+        }
+    }
+}
+
