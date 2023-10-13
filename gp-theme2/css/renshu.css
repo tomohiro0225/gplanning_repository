@@ -84,4 +84,29 @@ opacity: 0;
 }
 
 
-
+@media screen and (max-width:768px) {
+    .contain {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: block;
+        padding: 0 20px;
+    }
+    
+    .contain__list {
+        width: auto;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .contain__list:nth-child(3n) {
+        margin-right: 00px;
+    }
+    .contain__name {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .contain__text {
+        font-size: 0.9rem;
+    
+    }
+}
