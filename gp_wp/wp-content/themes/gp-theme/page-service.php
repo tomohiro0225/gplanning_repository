@@ -39,10 +39,7 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/service/service-img01.png" alt="service01">
                     </div>
                     <div class="service__contain__desc">
-                        <p class="service__contain__text">ECサイトの新規構築に始まり、売り<br>
-                            上げサポート、販促プロモーション<br>
-                            企画など、幅広いサービスでサポート<br>
-                            させていただきます。</p>
+                        <p class="service__contain__text">ECサイトの新規構築に始まり、売り<br class="pc-on">上げサポート、販促プロモーション<br class="pc-on">企画など、幅広いサービスでサポート<br class="pc-on">させていただきます。</p>
                     </div>
                 </div>
                 <div class="service__bg"></div>
@@ -139,12 +136,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/service/service-img02.png" alt="service02">
                     </div>
                     <div class="service__contain__desc">
-                        <p class="service__contain__text-reverse">会社や製品のイメージ作りに始ま<br>
-                            り、「欲しい」と思ってもらうた<br>
-                            めの販売促進プロモーション。<br>
-                            <br><br>
-                            しっかりとした戦略が非常に大事<br>
-                            になってきます。</p>
+                        <p class="service__contain__text-reverse">会社や製品のイメージ作りに始ま<br class="pc-on">り、「欲しい」と思ってもらうた<br class="pc-on">めの販売促進プロモーション。<br class="pc-on"><br><br>
+                            しっかりとした戦略が非常に大事<br class="pc-on">になってきます。</p>
                     </div>
                 </div>
                 <div class="service__bg-reverse"></div>
@@ -236,17 +229,14 @@
                 <div class="service__bg"></div>
                 <div class="service__event">
                     <h4 class="service__event__title">企画から実施運営まで<br class="sp-on"><span class="pc-on">企業イベントで感動を創出</span><span class="sp-on" style="text-align: right;">企業イベントで感動を創出</span></h4>
-                    <p class="service__event__text">新しいアイデア、高いクオリティ、細やかなホスピタリティで、参加者はもちろん、主催者の期待も超えた『感<br>
-                        動』を共有できるイベントをトータルプロデュースします。<br>
+                    <p class="service__event__text">新しいアイデア、高いクオリティ、細やかなホスピタリティで、参加者はもちろん、主催者の期待も超えた『感動』を共有できるイベントをトータルプロデュースします。<br>
                         会議室クラスから、アリーナクラスまで幅広く対応しています。<br>
                         イベントの開催についてお気軽にご相談ください。</p>
                 </div>
                 <div class="service__event">
                     <h4 class="service__event__title">新鮮なサプライズを提供する<br class="sp-on"><span class="pc-on">「新しいアイデア」</span><span class="sp-on" style="text-align: right;">「新しいアイデア」</span></h4>
-                    <p class="service__event__text">様々なイベントプロデュースのプロフェッショナルとして、あらゆるイベントでアイデアを形にできるプランニン
-                        グスキル、演出進行技術を有するのが強みです。<br>
-                        Withコロナ時代において、安全で効果的なイベントを実施するためには、計画から準備段階、そして当日の運営
-                        や万が一感染が発生した場合の適切な対応が必要不可欠です。</p>
+                    <p class="service__event__text">様々なイベントプロデュースのプロフェッショナルとして、あらゆるイベントでアイデアを形にできるプランニングスキル、演出進行技術を有するのが強みです。<br>
+                        Withコロナ時代において、安全で効果的なイベントを実施するためには、計画から準備段階、そして当日の運営や万が一感染が発生した場合の適切な対応が必要不可欠です。</p>
                 </div>
             </div>
         </section>
@@ -263,12 +253,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/service/service-img04.png" alt="service04">
                     </div>
                     <div class="service__contain__desc">
-                        <p class="service__contain__text-reverse">会社や製品のイメージ作りに始ま<br>
-                            り、「欲しい」と思ってもらうた<br>
-                            めの販売促進プロモーション。<br>
-                            <br>
-                            しっかりとした戦略が非常に大事<br>
-                            になってきます。</p>
+                        <p class="service__contain__text-reverse">会社や製品のイメージ作りに始ま<br class="pc-on">り、「欲しい」と思ってもらうた<br class="pc-on">めの販売促進プロモーション。<br class="pc-on"><br>
+                            しっかりとした戦略が非常に大事<br class="pc-on">になってきます。</p>
                     </div>
                 </div>
                 <div class="service__bg-reverse"></div>

@@ -116,6 +116,15 @@ li {
   transform: translateX(0px);
 }
 
+[data-topin] {
+  transition: all 0.6s;
+  transform: translateX(-1000px);
+}
+
+[data-topin].is-over {
+  transform: translateX(0px);
+}
+
 [data-rightin] {
   transition: all 0.6s;
   transform: translateX(1000px);
@@ -884,13 +893,17 @@ li {
   max-width: 1000px;
   padding: 0 0 60px;
   margin: 0 auto;
+  border-top: solid 1px #707070;
+}
+.top-news__item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   white-space: nowrap;
-  border-top: solid 1px #707070;
 }
-.top-news__table dt, .top-news__table dt + dd {
+
+
+.top-news__date, .top-news__title{
   font-family: "Noto Sans CJK JP";
   font-size: 16px;
   letter-spacing: 0.1em;
@@ -901,16 +914,14 @@ li {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.top-news__table dt {
+
+.top-news__date {
   width: calc(30% - 22px);
   font-weight: bold;
   padding-left: 22px;
+
 }
-.top-news__table dt + dd {
-  width: 70%;
-  font-weight: 500;
-  white-space: wrap;
-}
+
 .top-news__label {
   font-family: Futura;
   font-weight: bold;
@@ -923,13 +934,21 @@ li {
   margin-left: 10px;
 }
 
+.top-news__title {
+  width: 70%;
+  font-weight: 500;
+  white-space: nowrap;
+
+}
+
+
 @media screen and (max-width: 768px) {
   .top-news__table {
     padding: 0 50px 40px;
     display: block;
     border-top: none;
   }
-  .top-news__table dt, .top-news__table dt + dd {
+  .top-news__date, .top-news__title {
     font-family: "Noto Sans CJK JP";
     letter-spacing: 0.1em;
     line-height: 22px;
@@ -939,16 +958,16 @@ li {
     padding-top: 10px;
     padding-bottom: 0px;
   }
-  .top-news__table dt {
+  .top-news__date {
     width: auto;
     font-weight: bold;
     padding-left: 0px;
     font-size: 15px;
   }
-  .top-news__table dt:first-of-type {
+  .top-news__date:first-of-type {
     padding-top: 0px;
   }
-  .top-news__table dt + dd {
+  .top-news__title {
     width: auto;
     padding-bottom: 10px;
     border-bottom: solid 1px #707070;
@@ -2660,6 +2679,7 @@ li {
     width: auto;
     margin: 0 auto;
     padding: 0 20px;
+    max-width: 400px;
   }
   .service .flow__left {
     width: 30%;
@@ -2691,6 +2711,7 @@ li {
   }
   .service__promotion {
     margin: 40px auto 0;
+    max-width: 500px;
   }
   .service__promotion__work {
     font-size: 17px;
@@ -2761,6 +2782,7 @@ li {
   }
   .service__event {
     padding: 0 30px;
+    max-width: 400px;
   }
   .service__event__title {
     font-size: 15px;

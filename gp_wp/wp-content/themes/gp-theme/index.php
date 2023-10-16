@@ -87,19 +87,19 @@
         <div class="topVisual">
             <div class="topVisual__bg-blue"></div>
             <div class="topVisual__wrapper">
-                <div class="topVisual__title">
+                <div class="topVisual__title" data-topin>
                     <p class="topVisual__title-txt">For the smile</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
                     <p class="topVisual__title-txt mb-50">of our custamers</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
                 </div>
-                <p class="topVisual__text">リアルとデジタルの両面から最適な戦略で</p>
-                <p class="topVisual__text">売上最大化を目指します。</p>
-                <p class="topVisual__text">お客様の笑顔のために<br class="sp-on">「成せばなる」をモットーに！</p>
-                <div class="topVisual__real pc-on">
+                <p class="topVisual__text" data-topin>リアルとデジタルの両面から最適な戦略で</p>
+                <p class="topVisual__text" data-topin>売上最大化を目指します。</p>
+                <p class="topVisual__text" data-topin>お客様の笑顔のために<br class="sp-on">「成せばなる」をモットーに！</p>
+                <div class="topVisual__real pc-on" data-topin>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/top-kv-real.png" alt="real*digtal">
                 </div>
-                <div class="topVisual__real sp-on">
+                <div class="topVisual__real sp-on" data-topin>
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/top-kv-digtal.png" alt="real*digtal">
                 </div>
 
@@ -111,16 +111,31 @@
         <section class="top-news">
             <div class="top-news__wrapper">
                 <!-- 見出し -->
-                <h2 class="c-secTitle">
+                <h2 class="c-secTitle" >
                     <span>NEWS</span><br>
                     <span>お知らせ</span>
                 </h2><!-- /見出し --> 
-                <dl class="top-news__table">
-                    <dt>2023.00.00<span class="top-news__label">NEW</span></dt>
-                    <dd> ニュースタイトルニュースタイトルニュースタイトルニュースニュースタイトルニュース</dd>
-                    <dt>2023.00.00</dt>
-                    <dd> ニュースタイトルニュースタイトルニュースタイトルニュースニュースタイトルニュース</dd>
-                </dl>
+                <?php
+                    $args = array(
+                        'post_type' => 'news', //ポストタイプのスラッグ
+                        'order' => 'DESC',
+                        'posts_per_page' => 2,
+                    );
+                    $my_query = new WP_Query($args);
+                    if ($my_query->have_posts()) : 
+                ?>
+
+                <div class="top-news__table" data-fadein>
+                <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    <a href="<?php the_permalink(); ?>" class="top-news__item">
+                        <div class="top-news__date"><?php echo the_time('Y.m.d'); ?><span class="top-news__label">NEW</span></div>
+                        <p class="top-news__title"> <?php echo the_title(); ?></p>
+                    </a>
+                <?php endwhile; ?>
+                </div>
+
+                <?php endif; ?>
+
             </div>
             <a href="<?php echo get_post_type_archive_link("news"); ?>" class="c-btn">READ MORE</a>
             <!-- /news -->
@@ -133,12 +148,12 @@
             <!-- 背景画+丸のレイアウト配置 -->
                 <div class="top-ec__bg">       
                     <div class="top-ec__bg--margin"></div>
-                    <div class="top-ec__balloon">売り上げの最大化を目指して</div>
-                    <p class="top-ec__solve">ECサイト運営のお悩みを<br class="sp-on">解決いたします！</p>
+                    <div class="top-ec__balloon" data-fadein>売り上げの最大化を目指して</div>
+                    <p class="top-ec__solve" data-fadein>ECサイト運営のお悩みを<br class="sp-on">解決いたします！</p>
                 </div>
                 <!-- ECサイトのお悩みリスト -->
                 <div class="circle__list">
-                    <div class="circle__item">
+                    <div class="circle__item" data-fadein>
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec01.png" alt="img01" class="circle__big__img">
@@ -174,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="circle__item">
+                    <div class="circle__item" data-fadein>
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec02.png" alt="top-ec-img02" class="circle__big__img">
@@ -210,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="circle__item">
+                    <div class="circle__item" data-fadein>
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec03.png" alt="top-ec-img03" class="circle__big__img">
@@ -250,7 +265,7 @@
 
                 <!-- ご相談ください！ -->
             <div class="top-ec__consoulation">
-                <div class="top-ec__consoulation__wrapper">
+                <div class="top-ec__consoulation__wrapper" data-fadein>
                     <p class="top-ec__consoulation__text">サイトの<span class="font-light-blue">新規構築</span>から<span class="font-light-blue">売上サポート、<br class="sp-on">販促プロモーション企画など</span><br>
                         幅広いサービスで<br class="sp-on">サポートさせていただきます。</p>
                     <div class="top-ec__consoulation__label">イベントやスポーツ関連の運営等もご相談ください！</div>
@@ -262,7 +277,7 @@
         <!-- サービス -->
         <section class="top-service">
             <!-- 見出し -->
-            <h2 class="c-secTitle">
+            <h2 class="c-secTitle"  data-fadein>
                 <span>SERVICE</span><br>
                 <span>サービス</span>
             </h2><!-- /見出し --> 
@@ -270,10 +285,10 @@
             
             <div class="top-service__list">
                 <div class="top-service__item">
-                    <div class="top-service__img">
+                    <div class="top-service__img" data-leftin>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img01.png" alt="service01">
                     </div>
-                    <div class="top-service__texts">
+                    <div class="top-service__texts" data-fadein>
                         <div class="top-service__texts__wrapper">
                             <h3 class="top-service__work">ECサイト構築運営代行・SNS運用代行</h3>
                             <p class="top-service__desc">ECサイトの新規構築はもちろんのこと、SNSを使った<br class="pc-on">集客方法や売上をあげるためのサポート、販促物の<br class="pc-on">効果的な使い方などご相談ください。</p>
@@ -282,10 +297,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img-reverse">
+                    <div class="top-service__img-reverse" data-rightin>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img02.png" alt="service02">
                     </div>
-                    <div class="top-service__texts-reverse">
+                    <div class="top-service__texts-reverse" data-fadein>
                         <div class="top-service__texts__wrapper-reverse">
                             <h3 class="top-service__work-reverse">プロモーション・広告運営</h3>
                             <p class="top-service__desc-reverse">SNS・インフルエンサーを活用したプロモーションやリサ<br class="pc-on">ーチなども手掛けています。幅広いネットワークを最大限に<br class="pc-on">活かし、リクエストに誠心誠意お応えいたします。</p>
@@ -294,10 +309,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img">
+                    <div class="top-service__img" data-leftin>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img03.png" alt="service03">
                     </div>
-                    <div class="top-service__texts">
+                    <div class="top-service__texts" data-fadein>
                         <div class="top-service__texts__wrapper">
                             <h3 class="top-service__work">イベント企画・運営</h3>
                             <p class="top-service__desc">小さなイベントから、大きなアリーナクラスのもの<br class="pc-on">まで、会場のお手配はもちろん、企画のご相談から<br class="pc-on">ワンストップでサポートさせていただきます。</p>
@@ -306,10 +321,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img-reverse">
+                    <div class="top-service__img-reverse" data-rightin>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img04.png" alt="service04">
                     </div>
-                    <div class="top-service__texts-reverse">
+                    <div class="top-service__texts-reverse" data-fadein>
                         <div class="top-service__texts__wrapper-reverse">
                             <h3 class="top-service__work-reverse">スポーツ施設企画・運営</h3>
                             <p class="top-service__desc-reverse">利用者の安全を確保するとともに、より多くのユーザー<br class="pc-on">がスポーツに参画する機会を確保するための適正な<br class="pc-on">管理運営を行なっていくことを目指しています。</p>
@@ -325,7 +340,7 @@
         <section class="top-work">
             <p class="top-work__text"> TOKYO2020オリンピックパラリンピック<br>
                 Eスポーツ、謎肉限定販売イベントなど<br class="sp-on">実績はさまざま</p>
-            <div class="top-work__slider">
+            <div class="top-work__slider" data-fadein>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider02.png" alt="slider02" class="top-work__slider__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider03.png" alt="slider03" class="top-work__slider__img">
