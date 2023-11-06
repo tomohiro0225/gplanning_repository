@@ -76,8 +76,6 @@
 
         <!-- about -->
         <section class="about">
-            <div class="about__bg pc-on">
-            </div>
             <div class="about__wrapper">
                 <!-- 見出し -->
                 <h2 class="c-secTitle">

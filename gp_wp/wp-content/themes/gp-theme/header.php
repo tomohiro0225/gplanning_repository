@@ -21,7 +21,7 @@
             </h1><!-- /ロゴ -->
 
             <!-- ナビゲーション -->
-            <nav class="l-header__navi pc-on">
+            <nav class="l-header__navi">
                 <ul class="l-header__items">
                     <li class="l-header__item"><a href="<?php the_permalink(12); ?>">SERVICE</a></li>
                     <li class="l-header__item"><a href="<?php the_permalink(22); ?>">COMPANY</a></li>
@@ -32,7 +32,7 @@
             </nav><!-- /ナビゲーション -->
 
             <!-- ハンバーガー -->
-            <div class="menuTrigger sp-on">
+            <div class="menuTrigger">
                 <div class="menuTrigger__wrap">
                     <span></span>
                     <span></span>

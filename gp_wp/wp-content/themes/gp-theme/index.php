@@ -21,7 +21,7 @@
             </h1><!-- /ロゴ -->
 
             <!-- ナビゲーション -->
-            <nav class="l-header__navi pc-on">
+            <nav class="l-header__navi">
                 <ul class="l-header__items">
                     <li class="l-header__item"><a href="<?php the_permalink(12); ?>">SERVICE</a></li>
                     <li class="l-header__item"><a href="<?php the_permalink(22); ?>">COMPANY</a></li>
@@ -32,7 +32,7 @@
             </nav><!-- /ナビゲーション -->
 
             <!-- ハンバーガー -->
-            <div class="menuTrigger sp-on">
+            <div class="menuTrigger">
                 <div class="menuTrigger__wrap">
                     <span></span>
                     <span></span>
@@ -88,10 +88,7 @@
             <div class="topVisual__bg-blue"></div>
             <div class="topVisual__wrapper">
                 <div class="topVisual__title" data-topin>
-                    <p class="topVisual__title-txt">For the smile</p>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
-                    <p class="topVisual__title-txt mb-50">of our custamers</p>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/common/kv-line.png" alt="underline" class="topVisual__title-underline">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/top/kv-title.png" alt="underline" class="topVisual__title-img">
                 </div>
                 <p class="topVisual__text" data-topin>リアルとデジタルの両面から最適な戦略で</p>
                 <p class="topVisual__text" data-topin>売上最大化を目指します。</p>
