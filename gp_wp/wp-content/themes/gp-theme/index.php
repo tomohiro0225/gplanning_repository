@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <!-- style.cssの読み込み -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+  <!-- animate.css -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css">
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -87,16 +93,16 @@
         <div class="topVisual">
             <div class="topVisual__bg-blue"></div>
             <div class="topVisual__wrapper">
-                <div class="topVisual__title" data-topin>
+                <div class="topVisual__title box wow animated fadeInLeft">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/top/kv-title.png" alt="underline" class="topVisual__title-img">
                 </div>
-                <p class="topVisual__text" data-topin>リアルとデジタルの両面から最適な戦略で</p>
-                <p class="topVisual__text" data-topin>売上最大化を目指します。</p>
-                <p class="topVisual__text" data-topin>お客様の笑顔のために<br class="sp-on">「成せばなる」をモットーに！</p>
-                <div class="topVisual__real pc-on" data-topin>
+                <p class="topVisual__text box wow animated fadeInLeft">リアルとデジタルの両面から最適な戦略で</p>
+                <p class="topVisual__text box wow animated fadeInLeft">売上最大化を目指します。</p>
+                <p class="topVisual__text box wow animated fadeInLeft">お客様の笑顔のために<br class="sp-on">「成せばなる」をモットーに！</p>
+                <div class="topVisual__real pc-on box wow animated fadeInLeft">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/top-kv-real.png" alt="real*digtal">
                 </div>
-                <div class="topVisual__real sp-on" data-topin>
+                <div class="topVisual__real sp-on box wow animated fadeInLeft">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/common/top-kv-digtal.png" alt="real*digtal">
                 </div>
 
@@ -122,7 +128,7 @@
                     if ($my_query->have_posts()) : 
                 ?>
 
-                <div class="top-news__table" data-fadein>
+                <div class="top-news__table box wow animated fadeInUp">
                 <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                     <a href="<?php the_permalink(); ?>" class="top-news__item">
                         <div class="top-news__date"><?php echo the_time('Y.m.d'); ?><span class="top-news__label">NEW</span></div>
@@ -145,12 +151,12 @@
             <!-- 背景画+丸のレイアウト配置 -->
                 <div class="top-ec__bg">       
                     <div class="top-ec__bg--margin"></div>
-                    <div class="top-ec__balloon" data-fadein>売り上げの最大化を目指して</div>
-                    <p class="top-ec__solve" data-fadein>ECサイト運営のお悩みを<br class="sp-on">解決いたします！</p>
+                    <div class="top-ec__balloon box wow animated fadeInUp">売り上げの最大化を目指して</div>
+                    <p class="top-ec__solve box wow animated fadeInUp">ECサイト運営のお悩みを<br class="sp-on">解決いたします！</p>
                 </div>
                 <!-- ECサイトのお悩みリスト -->
                 <div class="circle__list">
-                    <div class="circle__item" data-fadein>
+                    <div class="circle__item box wow animated fadeInUp">
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec01.png" alt="img01" class="circle__big__img">
@@ -186,7 +192,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="circle__item" data-fadein>
+                    <div class="circle__item box wow animated fadeInUp">
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec02.png" alt="top-ec-img02" class="circle__big__img">
@@ -222,7 +228,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="circle__item" data-fadein>
+                    <div class="circle__item box wow animated fadeInUp">
                         <div class="circle__wrapper">
                             <div class="circle__big">
                                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-ec03.png" alt="top-ec-img03" class="circle__big__img">
@@ -262,7 +268,7 @@
 
                 <!-- ご相談ください！ -->
             <div class="top-ec__consoulation">
-                <div class="top-ec__consoulation__wrapper" data-fadein>
+                <div class="top-ec__consoulation__wrapper box wow animated fadeInUp">
                     <p class="top-ec__consoulation__text">サイトの<span class="font-light-blue">新規構築</span>から<span class="font-light-blue">売上サポート、<br class="sp-on">販促プロモーション企画など</span><br>
                         幅広いサービスで<br class="sp-on">サポートさせていただきます。</p>
                     <div class="top-ec__consoulation__label">イベントやスポーツ関連の運営等もご相談ください！</div>
@@ -274,7 +280,7 @@
         <!-- サービス -->
         <section class="top-service">
             <!-- 見出し -->
-            <h2 class="c-secTitle"  data-fadein>
+            <h2 class="c-secTitle" box wow animated fadeInUp >
                 <span>SERVICE</span><br>
                 <span>サービス</span>
             </h2><!-- /見出し --> 
@@ -282,10 +288,10 @@
             
             <div class="top-service__list">
                 <div class="top-service__item">
-                    <div class="top-service__img" data-leftin>
+                    <div class="top-service__img box wow animated fadeLeft">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img01.png" alt="service01">
                     </div>
-                    <div class="top-service__texts" data-fadein>
+                    <div class="top-service__texts box wow animated fadeInUp">
                         <div class="top-service__texts__wrapper">
                             <h3 class="top-service__work">ECサイト構築運営代行・SNS運用代行</h3>
                             <p class="top-service__desc">ECサイトの新規構築はもちろんのこと、SNSを使った<br class="pc-on">集客方法や売上をあげるためのサポート、販促物の<br class="pc-on">効果的な使い方などご相談ください。</p>
@@ -294,10 +300,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img-reverse" data-rightin>
+                    <div class="top-service__img-reverse box wow animated fadeRight">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img02.png" alt="service02">
                     </div>
-                    <div class="top-service__texts-reverse" data-fadein>
+                    <div class="top-service__texts-reverse box wow animated fadeInUp">
                         <div class="top-service__texts__wrapper-reverse">
                             <h3 class="top-service__work-reverse">プロモーション・広告運営</h3>
                             <p class="top-service__desc-reverse">SNS・インフルエンサーを活用したプロモーションやリサ<br class="pc-on">ーチなども手掛けています。幅広いネットワークを最大限に<br class="pc-on">活かし、リクエストに誠心誠意お応えいたします。</p>
@@ -306,10 +312,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img" data-leftin>
+                    <div class="top-service__img box wow animated fadeLeft">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img03.png" alt="service03">
                     </div>
-                    <div class="top-service__texts" data-fadein>
+                    <div class="top-service__texts box wow animated fadeInUp">
                         <div class="top-service__texts__wrapper">
                             <h3 class="top-service__work">イベント企画・運営</h3>
                             <p class="top-service__desc">小さなイベントから、大きなアリーナクラスのもの<br class="pc-on">まで、会場のお手配はもちろん、企画のご相談から<br class="pc-on">ワンストップでサポートさせていただきます。</p>
@@ -318,10 +324,10 @@
                     </div>
                 </div>
                 <div class="top-service__item">
-                    <div class="top-service__img-reverse" data-rightin>
+                    <div class="top-service__img-reverse box wow animated fadeRight">
                         <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-service-img04.png" alt="service04">
                     </div>
-                    <div class="top-service__texts-reverse" data-fadein>
+                    <div class="top-service__texts-reverse box wow animated fadeInUp">
                         <div class="top-service__texts__wrapper-reverse">
                             <h3 class="top-service__work-reverse">スポーツ施設企画・運営</h3>
                             <p class="top-service__desc-reverse">利用者の安全を確保するとともに、より多くのユーザー<br class="pc-on">がスポーツに参画する機会を確保するための適正な<br class="pc-on">管理運営を行なっていくことを目指しています。</p>
@@ -337,7 +343,7 @@
         <section class="top-work">
             <p class="top-work__text"> TOKYO2020オリンピックパラリンピック<br>
                 Eスポーツ、謎肉限定販売イベントなど<br class="sp-on">実績はさまざま</p>
-            <div class="top-work__slider" data-fadein>
+            <div class="top-work__slider box wow animated fadeInUp">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider01.png" alt="slider01" class="top-work__slider__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider02.png" alt="slider02" class="top-work__slider__img">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/top/top-slider03.png" alt="slider03" class="top-work__slider__img">
@@ -360,6 +366,9 @@
     <!-- javascript関連 -->
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/common.js"></script>
 </body>

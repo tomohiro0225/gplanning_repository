@@ -9,6 +9,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
   <!-- style.cssの読み込み -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+  <!-- animate.css -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css">
+<!-- wow.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 <body>
     <!-- header -->
